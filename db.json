@@ -1,0 +1,150 @@
+{
+  "cargoes": [
+    {
+      "CargoGroupID": "5e231e65b8903116b4e9d10c",
+      "RFID": "191614123401",
+      "InOrderNo": "INS4211136251920190830000005",
+      "OwnerCode": "DPTS",
+      "ShelfGroup": "11A01A",
+      "CargoStatus": 4,
+      "SyncStatus": 0,
+      "Timestamp": 1579510907759,
+      "Isbro": [],
+      "Cargos": [
+        {
+          "InOrderItemNo": "2",
+          "CargoNo": "MA2228600126",
+          "CargoName": "液压油22",
+          "CargoBatchNo": "33",
+          "Quantity": "5",
+          "QuantityReal": "2",
+          "Package": "Package",
+          "DagLvl": "3",
+          "SpeRemark": "SpeRemark",
+          "MSDS": "MSDS"
+        },
+        {
+          "InOrderItemNo": "1",
+          "CargoNo": "MA2228600125",
+          "CargoName": "发动机油11",
+          "CargoBatchNo": "BatchNo",
+          "Quantity": "1",
+          "QuantityReal": "1",
+          "Package": "Package",
+          "DagLvl": "3",
+          "SpeRemark": "SpeRemark",
+          "MSDS": "MSDS"
+        },
+        {
+          "InOrderItemNo": "2",
+          "CargoNo": "MA2228600126",
+          "CargoName": "液压油22",
+          "CargoBatchNo": "33",
+          "Quantity": "1",
+          "QuantityReal": "1",
+          "Package": "Package",
+          "DagLvl": "3",
+          "SpeRemark": "SpeRemark",
+          "MSDS": "MSDS"
+        },
+        {
+          "InOrderItemNo": "1",
+          "CargoNo": "MA2228600125",
+          "CargoName": "发动机油11",
+          "CargoBatchNo": "BatchNo",
+          "Quantity": "1",
+          "QuantityReal": "1",
+          "Package": "Package",
+          "DagLvl": "3",
+          "SpeRemark": "SpeRemark",
+          "MSDS": "MSDS"
+        }
+      ]
+    },
+    {
+      "CargoGroupID": "5e255071b8903116b4e9d139",
+      "RFID": "191614005661",
+      "InOrderNo": "INS4211136251920190830000005",
+      "OwnerCode": "DPTS",
+      "ShelfGroup": "",
+      "CargoStatus": 1,
+      "SyncStatus": 0,
+      "Timestamp": 1578995422000,
+      "Isbro": [
+        {
+          "BrokenCount": 2,
+          "BrokenType": "外破"
+        }
+      ],
+      "Cargos": [
+        {
+          "InOrderItemNo": "1",
+          "CargoNo": "MA2228600125",
+          "CargoName": "发动机油11",
+          "CargoBatchNo": "BatchNo",
+          "Quantity": "2",
+          "QuantityReal": "2",
+          "Package": "Package",
+          "DagLvl": "3",
+          "SpeRemark": "SpeRemark",
+          "MSDS": "MSDS"
+        }
+      ]
+    },
+    {
+      "CargoGroupID": "5e2568b2a0318f0c34a769e6",
+      "RFID": "191604000196",
+      "InOrderNo": "INS4211136251920190830000005",
+      "OwnerCode": "DPTS",
+      "ShelfGroup": "",
+      "CargoStatus": 1,
+      "SyncStatus": 0,
+      "Timestamp": 1579509941420,
+      "Isbro": [],
+      "Cargos": [
+        {
+          "InOrderItemNo": "2",
+          "CargoNo": "MA2228600126",
+          "CargoName": "液压油22",
+          "CargoBatchNo": "33",
+          "Quantity": "2",
+          "QuantityReal": "2",
+          "Package": "Package",
+          "DagLvl": "3",
+          "SpeRemark": "SpeRemark",
+          "MSDS": "MSDS"
+        }
+      ]
+    },
+    {
+      "CargoGroupID": "5e256912a0318f0c34a769e8",
+      "RFID": "191614120008",
+      "InOrderNo": "INS4211136251920190830000006",
+      "OwnerCode": "DPTS",
+      "ShelfGroup": "",
+      "CargoStatus": 1,
+      "SyncStatus": 1,
+      "Timestamp": 1579510037484,
+      "Isbro": [
+        {
+          "BrokenCount": 2,
+          "BrokenType": "标签泛红"
+        }
+      ],
+      "Cargos": [
+        {
+          "InOrderItemNo": "1",
+          "CargoNo": "MA2228600125",
+          "CargoName": "发动机油11",
+          "CargoBatchNo": "BatchNo",
+          "Quantity": "10",
+          "QuantityReal": "10",
+          "Package": "Package",
+          "DagLvl": "3",
+          "SpeRemark": "SpeRemark",
+          "MSDS": "MSDS"
+        }
+      ]
+    }
+  ]
+}
