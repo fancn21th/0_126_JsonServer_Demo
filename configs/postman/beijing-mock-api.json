@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "cbfd09e3-40d3-41b2-8f9e-6cddfcc1943f",
-		"name": "中外运API",
+		"_postman_id": "7f1289e5-a2ee-45c1-98ae-43698c1a3d02",
+		"name": "中外运API Mock",
 		"description": "中外运南通项目Web接口",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -10,20 +10,17 @@
 			"name": "库存记录",
 			"item": [
 				{
-					"name": "查询库存记录-200",
+					"name": "查询库存记录-200 Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getcargolist?",
+							"raw": "http://localhost:3000/sinoapi/getcargolist?pageindex=0&pagesize=100&orderno=INS4211136251920190830000005",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"getcargolist"
@@ -32,20 +29,17 @@
 								{
 									"key": "pageindex",
 									"value": "0",
-									"description": "页索引",
-									"disabled": true
+									"description": "页索引"
 								},
 								{
 									"key": "pagesize",
 									"value": "100",
-									"description": "页内记录数",
-									"disabled": true
+									"description": "页内记录数"
 								},
 								{
 									"key": "orderno",
 									"value": "INS4211136251920190830000005",
-									"description": "单号，包括入库单和移库单",
-									"disabled": true
+									"description": "单号，包括入库单和移库单"
 								},
 								{
 									"key": "orderno",
@@ -133,107 +127,6 @@
 							"body": "{\r\n  \"total\": 4,\r\n  \"data\": [\r\n    {\r\n      \"CargoGroupID\": \"5e231e65b8903116b4e9d10c\",\r\n      \"RFID\": \"191614123401\",\r\n      \"InOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OwnerCode\": \"DPTS\",\r\n      \"ShelfGroup\": \"11A01A\",\r\n      \"CargoStatus\": 4,\r\n      \"SyncStatus\": 0,\r\n      \"Timestamp\": 1579510907759,\r\n      \"Isbro\": [],\r\n      \"Cargos\": [\r\n        {\r\n          \"InOrderItemNo\": \"2\",\r\n          \"CargoNo\": \"MA2228600126\",\r\n          \"CargoName\": \"液压油22\",\r\n          \"CargoBatchNo\": \"33\",\r\n          \"Quantity\": \"5\",\r\n          \"QuantityReal\": \"2\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        },\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"1\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        },\r\n        {\r\n          \"InOrderItemNo\": \"2\",\r\n          \"CargoNo\": \"MA2228600126\",\r\n          \"CargoName\": \"液压油22\",\r\n          \"CargoBatchNo\": \"33\",\r\n          \"Quantity\": \"1\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        },\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"1\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"CargoGroupID\": \"5e255071b8903116b4e9d139\",\r\n      \"RFID\": \"191614005661\",\r\n      \"InOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OwnerCode\": \"DPTS\",\r\n      \"ShelfGroup\": \"\",\r\n      \"CargoStatus\": 1,\r\n      \"SyncStatus\": 0,\r\n      \"Timestamp\": 1578995422000,\r\n      \"Isbro\": [\r\n        {\r\n          \"BrokenCount\": 2,\r\n          \"BrokenType\": \"外破\"\r\n        }\r\n      ],\r\n      \"Cargos\": [\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"2\",\r\n          \"QuantityReal\": \"2\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"CargoGroupID\": \"5e2568b2a0318f0c34a769e6\",\r\n      \"RFID\": \"191604000196\",\r\n      \"InOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OwnerCode\": \"DPTS\",\r\n      \"ShelfGroup\": \"\",\r\n      \"CargoStatus\": 1,\r\n      \"SyncStatus\": 0,\r\n      \"Timestamp\": 1579509941420,\r\n      \"Isbro\": [],\r\n      \"Cargos\": [\r\n        {\r\n          \"InOrderItemNo\": \"2\",\r\n          \"CargoNo\": \"MA2228600126\",\r\n          \"CargoName\": \"液压油22\",\r\n          \"CargoBatchNo\": \"33\",\r\n          \"Quantity\": \"2\",\r\n          \"QuantityReal\": \"2\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"CargoGroupID\": \"5e256912a0318f0c34a769e8\",\r\n      \"RFID\": \"191614120008\",\r\n      \"InOrderNo\": \"INS4211136251920190830000006\",\r\n      \"OwnerCode\": \"DPTS\",\r\n      \"ShelfGroup\": \"\",\r\n      \"CargoStatus\": 1,\r\n      \"SyncStatus\": 1,\r\n      \"Timestamp\": 1579510037484,\r\n      \"Isbro\": [\r\n        {\r\n          \"BrokenCount\": 2,\r\n          \"BrokenType\": \"标签泛红\"\r\n        }\r\n      ],\r\n      \"Cargos\": [\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"10\",\r\n          \"QuantityReal\": \"10\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
 						}
 					]
-				},
-				{
-					"name": "查询库存记录-500",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getcargolist?pageindex=-1&pagesize=100",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"getcargolist"
-							],
-							"query": [
-								{
-									"key": "pageindex",
-									"value": "-1"
-								},
-								{
-									"key": "pagesize",
-									"value": "100"
-								}
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "查询库存记录-500",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://36.110.117.58:8000/sinoapi/getcargolist?pageindex=-1&pagesize=100",
-									"protocol": "http",
-									"host": [
-										"36",
-										"110",
-										"117",
-										"58"
-									],
-									"port": "8000",
-									"path": [
-										"sinoapi",
-										"getcargolist"
-									],
-									"query": [
-										{
-											"key": "pageindex",
-											"value": "-1"
-										},
-										{
-											"key": "pagesize",
-											"value": "100"
-										}
-									]
-								}
-							},
-							"status": "Internal Server Error",
-							"code": 500,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Vary",
-									"value": "Accept"
-								},
-								{
-									"key": "Server",
-									"value": "Microsoft-HTTPAPI/2.0"
-								},
-								{
-									"key": "Link",
-									"value": "</getcargolist.xml>; rel=\"alternate\"; type=\"application/xml\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 13 Feb 2020 07:06:48 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "close"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"statusCode\": 500,\n    \"message\": \"Something went horribly, horribly wrong while servicing your request.\",\n    \"details\": \"Error details are currently disabled.<br />To enable it, please set <strong>TraceConfiguration.DisplayErrorTraces</strong> to <strong>true</strong>.<br />For example by overriding your Bootstrapper's <strong>Configure</strong> method and calling<br/> <strong>environment.Tracing(enabled: false, displayErrorTraces: true);</strong>.\"\n}"
-						}
-					]
 				}
 			],
 			"description": "库存记录",
@@ -243,20 +136,17 @@
 			"name": "出库记录",
 			"item": [
 				{
-					"name": "查询出库记录-200",
+					"name": "查询出库记录-200 Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getoutcargolist?",
+							"raw": "http://localhost:3000/sinoapi/getoutcargolist?pageindex=0&pagesize=100",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"getoutcargolist"
@@ -265,14 +155,12 @@
 								{
 									"key": "pageindex",
 									"value": "0",
-									"description": "页索引",
-									"disabled": true
+									"description": "页索引"
 								},
 								{
 									"key": "pagesize",
 									"value": "100",
-									"description": "页内记录数",
-									"disabled": true
+									"description": "页内记录数"
 								},
 								{
 									"key": "orderno",
@@ -366,39 +254,6 @@
 							"body": "{\r\n  \"total\": 2,\r\n  \"data\": [\r\n    {\r\n      \"OutOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OutOrderItemNo\": \"1\",\r\n      \"CargoGroupID\": \"5e1fd7a2b8903116b4e9d0e7\",\r\n      \"RFID\": \"ship-191614120003\",\r\n      \"InOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OwnerCode\": \"DPTS\",\r\n      \"ShelfGroup\": \"1120\",\r\n      \"CargoStatus\": 9,\r\n      \"SyncStatus\": 0,\r\n      \"Timestamp\": 1579510788372,\r\n      \"Isbro\": [],\r\n      \"Cargos\": [\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"10\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        },\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"1\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        },\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"1\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        },\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"1\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"OutOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OutOrderItemNo\": \"1\",\r\n      \"CargoGroupID\": \"5e1fd7d1b8903116b4e9d0e9\",\r\n      \"RFID\": \"ship-191614120004\",\r\n      \"InOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OwnerCode\": \"DPTS\",\r\n      \"ShelfGroup\": \"1102\",\r\n      \"CargoStatus\": 9,\r\n      \"SyncStatus\": 0,\r\n      \"Timestamp\": 1579509082469,\r\n      \"Isbro\": [],\r\n      \"Cargos\": [\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"2\",\r\n          \"QuantityReal\": \"2\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
 						}
 					]
-				},
-				{
-					"name": "查询出库记录-500",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getoutcargolist?pageindex=-1&pagesize=100",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"getoutcargolist"
-							],
-							"query": [
-								{
-									"key": "pageindex",
-									"value": "-1"
-								},
-								{
-									"key": "pagesize",
-									"value": "100"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"description": "出库记录",
@@ -408,336 +263,17 @@
 			"name": "订单查询",
 			"item": [
 				{
-					"name": "查询库存货物-200",
+					"name": "查询任务详单-200 Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getcargolist?",
+							"raw": "http://localhost:3000/sinoapi/getoplist?pageindex=0&pagesize=100&orderno=INS4211136251920190830000005",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"getcargolist"
-							],
-							"query": [
-								{
-									"key": "pageindex",
-									"value": "0",
-									"description": "页索引",
-									"disabled": true
-								},
-								{
-									"key": "pagesize",
-									"value": "100",
-									"description": "页内记录数",
-									"disabled": true
-								},
-								{
-									"key": "orderno",
-									"value": "INS4211136251920190830000005",
-									"description": "单号",
-									"disabled": true
-								},
-								{
-									"key": "orderno",
-									"value": "INS4211136251920190830000007",
-									"description": "单号",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "查询库存货物-200",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://36.110.117.58:8000/sinoapi/getcargolist?",
-									"protocol": "http",
-									"host": [
-										"36",
-										"110",
-										"117",
-										"58"
-									],
-									"port": "8000",
-									"path": [
-										"sinoapi",
-										"getcargolist"
-									],
-									"query": [
-										{
-											"key": "pageindex",
-											"value": "0",
-											"description": "页索引",
-											"disabled": true
-										},
-										{
-											"key": "pagesize",
-											"value": "100",
-											"description": "页内记录数",
-											"disabled": true
-										},
-										{
-											"key": "orderno",
-											"value": "INS4211136251920190830000005",
-											"description": "单号",
-											"disabled": true
-										},
-										{
-											"key": "orderno",
-											"value": "INS4211136251920190830000007",
-											"description": "单号",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "plain",
-							"header": [
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Content-Type",
-									"value": "text/plain; charset=utf-8"
-								},
-								{
-									"key": "Server",
-									"value": "Microsoft-HTTPAPI/2.0"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 13 Feb 2020 07:07:12 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "close"
-								}
-							],
-							"cookie": [],
-							"body": "{\r\n  \"total\": 4,\r\n  \"data\": [\r\n    {\r\n      \"CargoGroupID\": \"5e231e65b8903116b4e9d10c\",\r\n      \"RFID\": \"191614123401\",\r\n      \"InOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OwnerCode\": \"DPTS\",\r\n      \"ShelfGroup\": \"11A01A\",\r\n      \"CargoStatus\": 4,\r\n      \"SyncStatus\": 0,\r\n      \"Timestamp\": 1579510907759,\r\n      \"Isbro\": [],\r\n      \"Cargos\": [\r\n        {\r\n          \"InOrderItemNo\": \"2\",\r\n          \"CargoNo\": \"MA2228600126\",\r\n          \"CargoName\": \"液压油22\",\r\n          \"CargoBatchNo\": \"33\",\r\n          \"Quantity\": \"5\",\r\n          \"QuantityReal\": \"2\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        },\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"1\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        },\r\n        {\r\n          \"InOrderItemNo\": \"2\",\r\n          \"CargoNo\": \"MA2228600126\",\r\n          \"CargoName\": \"液压油22\",\r\n          \"CargoBatchNo\": \"33\",\r\n          \"Quantity\": \"1\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        },\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"1\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"CargoGroupID\": \"5e255071b8903116b4e9d139\",\r\n      \"RFID\": \"191614005661\",\r\n      \"InOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OwnerCode\": \"DPTS\",\r\n      \"ShelfGroup\": \"\",\r\n      \"CargoStatus\": 1,\r\n      \"SyncStatus\": 0,\r\n      \"Timestamp\": 1578995422000,\r\n      \"Isbro\": [\r\n        {\r\n          \"BrokenCount\": 2,\r\n          \"BrokenType\": \"外破\"\r\n        }\r\n      ],\r\n      \"Cargos\": [\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"2\",\r\n          \"QuantityReal\": \"2\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"CargoGroupID\": \"5e2568b2a0318f0c34a769e6\",\r\n      \"RFID\": \"191604000196\",\r\n      \"InOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OwnerCode\": \"DPTS\",\r\n      \"ShelfGroup\": \"\",\r\n      \"CargoStatus\": 1,\r\n      \"SyncStatus\": 0,\r\n      \"Timestamp\": 1579509941420,\r\n      \"Isbro\": [],\r\n      \"Cargos\": [\r\n        {\r\n          \"InOrderItemNo\": \"2\",\r\n          \"CargoNo\": \"MA2228600126\",\r\n          \"CargoName\": \"液压油22\",\r\n          \"CargoBatchNo\": \"33\",\r\n          \"Quantity\": \"2\",\r\n          \"QuantityReal\": \"2\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"CargoGroupID\": \"5e256912a0318f0c34a769e8\",\r\n      \"RFID\": \"191614120008\",\r\n      \"InOrderNo\": \"INS4211136251920190830000006\",\r\n      \"OwnerCode\": \"DPTS\",\r\n      \"ShelfGroup\": \"\",\r\n      \"CargoStatus\": 1,\r\n      \"SyncStatus\": 1,\r\n      \"Timestamp\": 1579510037484,\r\n      \"Isbro\": [\r\n        {\r\n          \"BrokenCount\": 2,\r\n          \"BrokenType\": \"标签泛红\"\r\n        }\r\n      ],\r\n      \"Cargos\": [\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"10\",\r\n          \"QuantityReal\": \"10\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
-						}
-					]
-				},
-				{
-					"name": "查询库存货物-500",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getcargolist?pageindex=-1&pagesize=100",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"getcargolist"
-							],
-							"query": [
-								{
-									"key": "pageindex",
-									"value": "-1"
-								},
-								{
-									"key": "pagesize",
-									"value": "100"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "查询出库货物-200",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getoutcargolist?",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"getoutcargolist"
-							],
-							"query": [
-								{
-									"key": "pageindex",
-									"value": "0",
-									"description": "页索引",
-									"disabled": true
-								},
-								{
-									"key": "pagesize",
-									"value": "100",
-									"description": "页内记录数",
-									"disabled": true
-								},
-								{
-									"key": "orderno",
-									"value": "INS4211136251920190830000005",
-									"description": "单号，包括入库单、出库单和移库单",
-									"disabled": true
-								},
-								{
-									"key": "orderno",
-									"value": "INS4211136251920190830000007",
-									"description": "单号，包括入库单、出库单和移库单",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "查询出库货物-200",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://36.110.117.58:8000/sinoapi/getoutcargolist?",
-									"protocol": "http",
-									"host": [
-										"36",
-										"110",
-										"117",
-										"58"
-									],
-									"port": "8000",
-									"path": [
-										"sinoapi",
-										"getoutcargolist"
-									],
-									"query": [
-										{
-											"key": "pageindex",
-											"value": "0",
-											"description": "页索引",
-											"disabled": true
-										},
-										{
-											"key": "pagesize",
-											"value": "100",
-											"description": "页内记录数",
-											"disabled": true
-										},
-										{
-											"key": "orderno",
-											"value": "INS4211136251920190830000005",
-											"description": "单号，包括入库单、出库单和移库单",
-											"disabled": true
-										},
-										{
-											"key": "orderno",
-											"value": "INS4211136251920190830000007",
-											"description": "单号，包括入库单、出库单和移库单",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "plain",
-							"header": [
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Content-Type",
-									"value": "text/plain; charset=utf-8"
-								},
-								{
-									"key": "Server",
-									"value": "Microsoft-HTTPAPI/2.0"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 13 Feb 2020 07:07:21 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "close"
-								}
-							],
-							"cookie": [],
-							"body": "{\r\n  \"total\": 2,\r\n  \"data\": [\r\n    {\r\n      \"OutOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OutOrderItemNo\": \"1\",\r\n      \"CargoGroupID\": \"5e1fd7a2b8903116b4e9d0e7\",\r\n      \"RFID\": \"ship-191614120003\",\r\n      \"InOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OwnerCode\": \"DPTS\",\r\n      \"ShelfGroup\": \"1120\",\r\n      \"CargoStatus\": 9,\r\n      \"SyncStatus\": 0,\r\n      \"Timestamp\": 1579510788372,\r\n      \"Isbro\": [],\r\n      \"Cargos\": [\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"10\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        },\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"1\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        },\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"1\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        },\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"1\",\r\n          \"QuantityReal\": \"1\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"OutOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OutOrderItemNo\": \"1\",\r\n      \"CargoGroupID\": \"5e1fd7d1b8903116b4e9d0e9\",\r\n      \"RFID\": \"ship-191614120004\",\r\n      \"InOrderNo\": \"INS4211136251920190830000005\",\r\n      \"OwnerCode\": \"DPTS\",\r\n      \"ShelfGroup\": \"1102\",\r\n      \"CargoStatus\": 9,\r\n      \"SyncStatus\": 0,\r\n      \"Timestamp\": 1579509082469,\r\n      \"Isbro\": [],\r\n      \"Cargos\": [\r\n        {\r\n          \"InOrderItemNo\": \"1\",\r\n          \"CargoNo\": \"MA2228600125\",\r\n          \"CargoName\": \"发动机油11\",\r\n          \"CargoBatchNo\": \"BatchNo\",\r\n          \"Quantity\": \"2\",\r\n          \"QuantityReal\": \"2\",\r\n          \"Package\": \"Package\",\r\n          \"DagLvl\": \"3\",\r\n          \"SpeRemark\": \"SpeRemark\",\r\n          \"MSDS\": \"MSDS\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}"
-						}
-					]
-				},
-				{
-					"name": "查询出库货物-500",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getoutcargolist?pageindex=-1&pagesize=100",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"getoutcargolist"
-							],
-							"query": [
-								{
-									"key": "pageindex",
-									"value": "-1"
-								},
-								{
-									"key": "pagesize",
-									"value": "100"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "查询任务详单-200",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getoplist?",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"getoplist"
@@ -746,20 +282,17 @@
 								{
 									"key": "pageindex",
 									"value": "0",
-									"description": "页索引",
-									"disabled": true
+									"description": "页索引"
 								},
 								{
 									"key": "pagesize",
-									"value": "1000",
-									"description": "页内记录数",
-									"disabled": true
+									"value": "100",
+									"description": "页内记录数"
 								},
 								{
 									"key": "orderno",
 									"value": "INS4211136251920190830000005",
-									"description": "单号，包括入库单、出库单和移库单",
-									"disabled": true
+									"description": "单号，包括入库单、出库单和移库单"
 								},
 								{
 									"key": "orderno",
@@ -895,39 +428,6 @@
 							"body": "{\r\n  \"total\": 16,\r\n  \"data\": [\r\n    {\r\n      \"OrderNo\": \"INS4211136251920190830000005\",\r\n      \"ItemNo\": \"1\",\r\n      \"OpSN\": \"5e1fd7a2b8903116b4e9d0e8\",\r\n      \"OpType\": \"receipt\",\r\n      \"OpStaff\": \"test3\",\r\n      \"OpStaffName\": \"测试3\",\r\n      \"OpDev\": \"M02\",\r\n      \"OpSta\": \"done\",\r\n      \"OrderTimestamp\": \"1533710303341\",\r\n      \"DeadlineTimestamp\": \"1533710399000\",\r\n      \"BeginTimestamp\": \"1579145149349\",\r\n      \"EndTimestamp\": \"1579145153056\",\r\n      \"RFID\": \"191614120003\",\r\n      \"ShelfGroupNo\": null,\r\n      \"NewShelfGroupNo\": null,\r\n      \"DestShelfGroupNo\": null,\r\n      \"CargoName\": \"发动机油11,发动机油11,发动机油11,发动机油11\",\r\n      \"Quantity\": 4,\r\n      \"SyncStatus\": 1,\r\n      \"SyncAck\": null\r\n    },\r\n    {\r\n      \"OrderNo\": \"INS4211136251920190830000005\",\r\n      \"ItemNo\": \"1\",\r\n      \"OpSN\": \"5e1fd7d1b8903116b4e9d0ea\",\r\n      \"OpType\": \"receipt\",\r\n      \"OpStaff\": \"test3\",\r\n      \"OpStaffName\": \"测试3\",\r\n      \"OpDev\": \"M05\",\r\n      \"OpSta\": \"done\",\r\n      \"OrderTimestamp\": \"1533710303341\",\r\n      \"DeadlineTimestamp\": \"1533710399000\",\r\n      \"BeginTimestamp\": \"1579145158993\",\r\n      \"EndTimestamp\": \"1579145170023\",\r\n      \"RFID\": \"191614120004\",\r\n      \"ShelfGroupNo\": null,\r\n      \"NewShelfGroupNo\": null,\r\n      \"DestShelfGroupNo\": null,\r\n      \"CargoName\": \"发动机油11\",\r\n      \"Quantity\": 2,\r\n      \"SyncStatus\": 0,\r\n      \"SyncAck\": null\r\n    },\r\n    {\r\n      \"OrderNo\": \"INS4211136251920190830000005\",\r\n      \"ItemNo\": \"2\",\r\n      \"OpSN\": \"5e231e65b8903116b4e9d10e\",\r\n      \"OpType\": \"receipt\",\r\n      \"OpStaff\": \"test3\",\r\n      \"OpStaffName\": \"测试3\",\r\n      \"OpDev\": \"E3\",\r\n      \"OpSta\": \"done\",\r\n      \"OrderTimestamp\": \"1533710303341\",\r\n      \"DeadlineTimestamp\": \"1533710399000\",\r\n      \"BeginTimestamp\": \"1579359823326\",\r\n      \"EndTimestamp\": \"1579359883326\",\r\n      \"RFID\": \"191614123401\",\r\n      \"ShelfGroupNo\": null,\r\n      \"NewShelfGroupNo\": null,\r\n      \"DestShelfGroupNo\": null,\r\n      \"CargoName\": \"液压油22,发动机油11,液压油22,发动机油11\",\r\n      \"Quantity\": 5,\r\n      \"SyncStatus\": 0,\r\n      \"SyncAck\": null\r\n    },\r\n    {\r\n      \"OrderNo\": \"INS4211136251920190830000005\",\r\n      \"ItemNo\": \"1\",\r\n      \"OpSN\": \"5e255071b8903116b4e9d13a\",\r\n      \"OpType\": \"receipt\",\r\n      \"OpStaff\": \"test3\",\r\n      \"OpStaffName\": \"测试3\",\r\n      \"OpDev\": \"M55\",\r\n      \"OpSta\": \"done\",\r\n      \"OrderTimestamp\": \"1533710303341\",\r\n      \"DeadlineTimestamp\": \"1533710399000\",\r\n      \"BeginTimestamp\": \"1578995122000\",\r\n      \"EndTimestamp\": \"1578995422000\",\r\n      \"RFID\": \"191614005661\",\r\n      \"ShelfGroupNo\": null,\r\n      \"NewShelfGroupNo\": null,\r\n      \"DestShelfGroupNo\": null,\r\n      \"CargoName\": \"发动机油11\",\r\n      \"Quantity\": 2,\r\n      \"SyncStatus\": 0,\r\n      \"SyncAck\": null\r\n    },\r\n    {\r\n      \"OrderNo\": \"INS4211136251920190830000005\",\r\n      \"ItemNo\": \"1\",\r\n      \"OpSN\": \"5e256266a0318f0c34a769dd\",\r\n      \"OpType\": \"shelve\",\r\n      \"OpStaff\": \"huanglongfei\",\r\n      \"OpStaffName\": \"黄龙飞\",\r\n      \"OpDev\": \"E3\",\r\n      \"OpSta\": \"done\",\r\n      \"OrderTimestamp\": \"1578905842000\",\r\n      \"DeadlineTimestamp\": \"1578909442000\",\r\n      \"BeginTimestamp\": \"1579508383649\",\r\n      \"EndTimestamp\": \"1579508408206\",\r\n      \"RFID\": \"191614120004\",\r\n      \"ShelfGroupNo\": \"\",\r\n      \"NewShelfGroupNo\": \"11C05B\",\r\n      \"DestShelfGroupNo\": \"11A01A\",\r\n      \"CargoName\": \"发动机油11\",\r\n      \"Quantity\": 2,\r\n      \"SyncStatus\": 1,\r\n      \"SyncAck\": null\r\n    },\r\n    {\r\n      \"OrderNo\": \"INS4211136251920190830000005\",\r\n      \"ItemNo\": \"00001\",\r\n      \"OpSN\": \"5e2562efa0318f0c34a769de\",\r\n      \"OpType\": \"move\",\r\n      \"OpStaff\": \"huanglongfei\",\r\n      \"OpStaffName\": \"黄龙飞\",\r\n      \"OpDev\": \"E3\",\r\n      \"OpSta\": \"done\",\r\n      \"OrderTimestamp\": \"1578905842000\",\r\n      \"DeadlineTimestamp\": \"1578909442000\",\r\n      \"BeginTimestamp\": \"1579508730682\",\r\n      \"EndTimestamp\": \"1579508734395\",\r\n      \"RFID\": \"191614120004\",\r\n      \"ShelfGroupNo\": \"11A01A\",\r\n      \"NewShelfGroupNo\": \"11A01E\",\r\n      \"DestShelfGroupNo\": \"11A01A\",\r\n      \"CargoName\": \"发动机油11\",\r\n      \"Quantity\": 2,\r\n      \"SyncStatus\": 0,\r\n      \"SyncAck\": null\r\n    },\r\n    {\r\n      \"OrderNo\": \"INS4211136251920190830000005\",\r\n      \"ItemNo\": \"1\",\r\n      \"OpSN\": \"5e256422a0318f0c34a769df\",\r\n      \"OpType\": \"pick\",\r\n      \"OpStaff\": \"huanglongfei\",\r\n      \"OpStaffName\": \"黄龙飞\",\r\n      \"OpDev\": \"E3\",\r\n      \"OpSta\": \"done\",\r\n      \"OrderTimestamp\": \"1578905842000\",\r\n      \"DeadlineTimestamp\": \"1578909442000\",\r\n      \"BeginTimestamp\": \"1579508788403\",\r\n      \"EndTimestamp\": \"1579508895843\",\r\n      \"RFID\": \"191614120004\",\r\n      \"ShelfGroupNo\": \"11A01A\",\r\n      \"NewShelfGroupNo\": \"pickto\",\r\n      \"DestShelfGroupNo\": \"1102\",\r\n      \"CargoName\": \"发动机油11\",\r\n      \"Quantity\": 2,\r\n      \"SyncStatus\": 0,\r\n      \"SyncAck\": null\r\n    },\r\n    {\r\n      \"OrderNo\": \"INS4211136251920190830000005\",\r\n      \"ItemNo\": \"1\",\r\n      \"OpSN\": \"5e2564a0a0318f0c34a769e0\",\r\n      \"OpType\": \"ship\",\r\n      \"OpStaff\": \"huanglongfei\",\r\n      \"OpStaffName\": \"黄龙飞\",\r\n      \"OpDev\": \"E3\",\r\n      \"OpSta\": \"done\",\r\n      \"OrderTimestamp\": \"1578905842000\",\r\n      \"DeadlineTimestamp\": \"1578909442000\",\r\n      \"BeginTimestamp\": \"1579508921217\",\r\n      \"EndTimestamp\": \"1579509082469\",\r\n      \"RFID\": \"191614120004\",\r\n      \"ShelfGroupNo\": \"1102\",\r\n      \"NewShelfGroupNo\": null,\r\n      \"DestShelfGroupNo\": null,\r\n      \"CargoName\": \"发动机油11\",\r\n      \"Quantity\": 2,\r\n      \"SyncStatus\": 0,\r\n      \"SyncAck\": null\r\n    },\r\n    {\r\n      \"OrderNo\": \"INS4211136251920190830000005\",\r\n      \"ItemNo\": \"1\",\r\n      \"OpSN\": \"5e256736a0318f0c34a769e5\",\r\n      \"OpType\": \"shelve\",\r\n      \"OpStaff\": \"huanglongfei\",\r\n      \"OpStaffName\": \"黄龙飞\",\r\n      \"OpDev\": \"M55\",\r\n      \"OpSta\": \"done\",\r\n      \"OrderTimestamp\": \"1578905842000\",\r\n      \"DeadlineTimestamp\": \"1578909442000\",\r\n      \"BeginTimestamp\": \"1579509814695\",\r\n      \"EndTimestamp\": \"1579509822679\",\r\n      \"RFID\": \"191614120003\",\r\n      \"ShelfGroupNo\": \"\",\r\n      \"NewShelfGroupNo\": \"11C01A\",\r\n      \"DestShelfGroupNo\": \"11A01A\",\r\n      \"CargoName\": \"发动机油11,发动机油11,发动机油11,发动机油11\",\r\n      \"Quantity\": 4,\r\n      \"SyncStatus\": 0,\r\n      \"SyncAck\": null\r\n    },\r\n    {\r\n      \"OrderNo\": \"INS4211136251920190830000005\",\r\n      \"ItemNo\": \"2\",\r\n      \"OpSN\": \"5e2568b2a0318f0c34a769e7\",\r\n      \"OpType\": \"receipt\",\r\n      \"OpStaff\": \"huanglongfei\",\r\n      \"OpStaffName\": \"黄龙飞\",\r\n      \"OpDev\": \"M55\",\r\n      \"OpSta\": \"done\",\r\n      \"OrderTimestamp\": \"1578905842000\",\r\n      \"DeadlineTimestamp\": \"1578909442000\",\r\n      \"BeginTimestamp\": \"1579509910671\",\r\n      \"EndTimestamp\": \"1579509941420\",\r\n      \"RFID\": \"191604000196\",\r\n      \"ShelfGroupNo\": null,\r\n      \"NewShelfGroupNo\": null,\r\n      \"DestShelfGroupNo\": null,\r\n      \"CargoName\": \"液压油22\",\r\n      \"Quantity\": 2,\r\n      \"SyncStatus\": 0,\r\n      \"SyncAck\": null\r\n    }\r\n  ]\r\n}"
 						}
 					]
-				},
-				{
-					"name": "查询任务详单-200-返回Error信息",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getoplist?pageindex=-1&pagesize=100",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"getoplist"
-							],
-							"query": [
-								{
-									"key": "pageindex",
-									"value": "-1"
-								},
-								{
-									"key": "pagesize",
-									"value": "100"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"description": "订单查询",
@@ -937,20 +437,17 @@
 			"name": "异常记录",
 			"item": [
 				{
-					"name": "查询上传记录-200",
+					"name": "查询上传记录-200 Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getuploadresult?opsn=5e1c4ea48ba6fc10743b0c0e",
+							"raw": "http://localhost:3000/sinoapi/getuploadresult?opsn=5e1c4ea48ba6fc10743b0c0e",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"getuploadresult"
@@ -1036,79 +533,17 @@
 					]
 				},
 				{
-					"name": "查询上传记录-500",
+					"name": "修改SinoWMS同步状态-200 Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getuploadresult?",
+							"raw": "http://localhost:3000/sinoapi/updatesyncstatus?opsn=5e1fd7a2b8903116b4e9d0e8&status=1",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"getuploadresult"
-							],
-							"query": [
-								{
-									"key": "flag",
-									"value": "true",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "查询上传记录-500",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getuploadresult?opsn=1174",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"getuploadresult"
-							],
-							"query": [
-								{
-									"key": "opsn",
-									"value": "1174"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "修改SinoWMS同步状态-200-返回值始终为ok",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/updatesyncstatus?opsn=5e1fd7a2b8903116b4e9d0e8&status=1",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"updatesyncstatus"
@@ -1121,14 +556,8 @@
 								},
 								{
 									"key": "status",
-									"value": "0",
-									"description": "未同步",
-									"disabled": true
-								},
-								{
-									"key": "status",
 									"value": "1",
-									"description": "已同步"
+									"description": "未同步"
 								}
 							]
 						}
@@ -1202,40 +631,6 @@
 							"body": "ok"
 						}
 					]
-				},
-				{
-					"name": "修改SinoWMS同步状态-500",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/updatesyncstatus?status=0",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"updatesyncstatus"
-							],
-							"query": [
-								{
-									"key": "opsn",
-									"value": "5e1fd7a2b8903116b4e9d0e8",
-									"disabled": true
-								},
-								{
-									"key": "status",
-									"value": "0"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"description": "异常记录",
@@ -1245,20 +640,17 @@
 			"name": "任务详单",
 			"item": [
 				{
-					"name": "查询任务详单-200-数组",
+					"name": "查询任务详单-200-数组 Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getoplistbytime?",
+							"raw": "http://localhost:3000/sinoapi/getoplistbytime?begin=1581436800000&end=1581523199999",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"getoplistbytime"
@@ -1267,14 +659,12 @@
 								{
 									"key": "begin",
 									"value": "1581436800000",
-									"description": "期初时间",
-									"disabled": true
+									"description": "期初时间"
 								},
 								{
 									"key": "end",
 									"value": "1581523199999",
-									"description": "期末时间",
-									"disabled": true
+									"description": "期末时间"
 								}
 							]
 						}
@@ -1346,20 +736,17 @@
 					]
 				},
 				{
-					"name": "条件查询任务列表-200",
+					"name": "条件查询任务列表-200 Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getuploadresultbyinorder?",
+							"raw": "http://localhost:3000/sinoapi/getuploadresultbyinorder?inorder=INS4211136251920190830000005",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"getuploadresultbyinorder"
@@ -1368,8 +755,7 @@
 								{
 									"key": "inorder",
 									"value": "INS4211136251920190830000005",
-									"description": "入库单号",
-									"disabled": true
+									"description": "入库单号"
 								}
 							]
 						}
@@ -1442,20 +828,17 @@
 			"name": "盘库记录",
 			"item": [
 				{
-					"name": "查询盘库记录-200-数组",
+					"name": "查询盘库记录-200-数组 Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getivtlist?",
+							"raw": "http://localhost:3000/sinoapi/getivtlist?pageindex=0&pagesize=100",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"getivtlist"
@@ -1464,14 +847,12 @@
 								{
 									"key": "pageindex",
 									"value": "0",
-									"description": "页索引",
-									"disabled": true
+									"description": "页索引"
 								},
 								{
 									"key": "pagesize",
 									"value": "100",
-									"description": "页内记录数",
-									"disabled": true
+									"description": "页内记录数"
 								}
 							]
 						}
@@ -1543,53 +924,17 @@
 					]
 				},
 				{
-					"name": "查询盘库记录-500",
+					"name": "查询盘库详情-200-数组 Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getivtlist?pageindex=-1&pagesize=100",
+							"raw": "http://localhost:3000/sinoapi/getcargolistivt?pageindex=0&pagesize=100&inventoryno=20200113-001",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"getivtlist"
-							],
-							"query": [
-								{
-									"key": "pageindex",
-									"value": "-1"
-								},
-								{
-									"key": "pagesize",
-									"value": "100"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "查询盘库详情-200-数组",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getcargolistivt?inventoryno=20200113-001",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"getcargolistivt"
@@ -1598,19 +943,22 @@
 								{
 									"key": "pageindex",
 									"value": "0",
-									"description": "页索引",
-									"disabled": true
+									"description": "页索引"
 								},
 								{
 									"key": "pagesize",
 									"value": "100",
-									"description": "页内记录数",
-									"disabled": true
+									"description": "页内记录数"
 								},
 								{
 									"key": "inventoryno",
 									"value": "20200113-001",
 									"description": "盘点编号"
+								},
+								{
+									"key": "inventoryno",
+									"value": "20200120-001",
+									"disabled": true
 								}
 							]
 						}
@@ -1685,39 +1033,6 @@
 							"body": "[\r\n  {\r\n    \"CargoGroupID\": \"5e1c4cea8ba6fc10743b0c0a\",\r\n    \"RFID\": \"191614120003\",\r\n    \"InOrderNo\": \"INS4211136251920190830000005\",\r\n    \"OwnerCode\": \"DPTS\",\r\n    \"ShelfGroup\": \"\",\r\n    \"CargoStatus\": 1,\r\n    \"IvtStatus\": 0,\r\n    \"Timestamp\": 1578913003762,\r\n    \"Isbro\": [],\r\n    \"Cargos\": []\r\n  }\r\n]"
 						}
 					]
-				},
-				{
-					"name": "查询盘库详情-500",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/getcargolistivt?pageindex=0&pagesize=100",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"getcargolistivt"
-							],
-							"query": [
-								{
-									"key": "pageindex",
-									"value": "0"
-								},
-								{
-									"key": "pagesize",
-									"value": "100"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"description": "盘库记录",
@@ -1727,20 +1042,17 @@
 			"name": "报表信息",
 			"item": [
 				{
-					"name": "查询叉车工作量-200-数组",
+					"name": "查询叉车工作量-200-数组 Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/exportworkloaddev?begin=1577808000000&end=1580572799999",
+							"raw": "http://localhost:3000/sinoapi/exportworkloaddev?begin=1577808000000&end=1580572799999&devtype=0&mode=day",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"exportworkloaddev"
@@ -1765,8 +1077,7 @@
 								{
 									"key": "devtype",
 									"value": "0",
-									"description": "设备类型，手持",
-									"disabled": true
+									"description": "设备类型，手持"
 								},
 								{
 									"key": "devtype",
@@ -1777,8 +1088,7 @@
 								{
 									"key": "mode",
 									"value": "day",
-									"description": "天",
-									"disabled": true
+									"description": "天"
 								},
 								{
 									"key": "mode",
@@ -1908,55 +1218,17 @@
 					]
 				},
 				{
-					"name": "查询叉车工作量-200-Error信息",
+					"name": "查询人员工作量-200-数组 Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/exportworkloaddev?begin=start&end=end",
+							"raw": "http://localhost:3000/sinoapi/exportworkloadstaff?begin=1577808000000&end=1580572799999&mode=day",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"exportworkloaddev"
-							],
-							"query": [
-								{
-									"key": "begin",
-									"value": "start",
-									"description": "起始时间点"
-								},
-								{
-									"key": "end",
-									"value": "end",
-									"description": "终止时间点"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "查询人员工作量-200-数组",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/exportworkloadstaff?begin=1577808000000&end=1580572799999",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"exportworkloadstaff"
@@ -1975,8 +1247,7 @@
 								{
 									"key": "mode",
 									"value": "day",
-									"description": "天",
-									"disabled": true
+									"description": "天"
 								},
 								{
 									"key": "mode",
@@ -2100,55 +1371,17 @@
 					]
 				},
 				{
-					"name": "查询人员工作量-200-Error信息",
+					"name": "查询货位利用率-200-数组 Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/exportworkloadstaff?begin=start&end=end",
+							"raw": "http://localhost:3000/sinoapi/exportshelfutilization?begin=2020-01-01&end=2020-02-01",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"exportworkloadstaff"
-							],
-							"query": [
-								{
-									"key": "begin",
-									"value": "start",
-									"description": "起始时间点"
-								},
-								{
-									"key": "end",
-									"value": "end",
-									"description": "终止时间点"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "查询货位利用率-200-数组",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/exportshelfutilization?begin=2020-01-01&end=2020-02-01",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"exportshelfutilization"
@@ -2232,55 +1465,17 @@
 					]
 				},
 				{
-					"name": "查询货位利用率-200-Error信息",
+					"name": "查询货位破损信息-200-数组 Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/exportshelfutilization?begin=start&end=end",
+							"raw": "http://localhost:3000/sinoapi/cargobrokenbyinorder?inorder=INS4211136251920190830000005",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"exportshelfutilization"
-							],
-							"query": [
-								{
-									"key": "begin",
-									"value": "start",
-									"description": "起始时间点"
-								},
-								{
-									"key": "end",
-									"value": "end",
-									"description": "终止时间点"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "查询货位破损信息-200-数组",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/cargobrokenbyinorder?inorder=INS4211136251920190830000005",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"cargobrokenbyinorder"
@@ -2290,6 +1485,11 @@
 									"key": "inorder",
 									"value": "INS4211136251920190830000005",
 									"description": "单号"
+								},
+								{
+									"key": "inorder",
+									"value": "INS4211136251920190830000006",
+									"disabled": true
 								}
 							]
 						}
@@ -2354,20 +1554,17 @@
 					]
 				},
 				{
-					"name": "查询照片-200-jpeg",
+					"name": "查询照片-200-jpeg Mock",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/img/glxss5267c608043e484886cd54dbbcbb0c43",
+							"raw": "http://localhost:3000/sinoapi/img/glxss5267c608043e484886cd54dbbcbb0c43",
 							"protocol": "http",
 							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
+								"localhost"
 							],
-							"port": "8000",
+							"port": "3000",
 							"path": [
 								"sinoapi",
 								"img",
@@ -2379,112 +1576,6 @@
 				}
 			],
 			"description": "报表信息",
-			"protocolProfileBehavior": {}
-		},
-		{
-			"name": "账号管理",
-			"item": [
-				{
-					"name": "登录-200",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"value": "application/x-www-form-urlencoded",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "username",
-									"value": "admin",
-									"type": "text"
-								},
-								{
-									"key": "pwd",
-									"value": "4QrcOUm6Wau+VuBX8g+IPg==",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/login",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"login"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "注册-200",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"value": "application/x-www-form-urlencoded",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "username",
-									"value": "user1",
-									"type": "text"
-								},
-								{
-									"key": "name",
-									"value": "测试",
-									"type": "text"
-								},
-								{
-									"key": "token",
-									"value": "eb77bd6c476a48ce8a3fefdcad66036b",
-									"type": "text"
-								},
-								{
-									"key": "pwd",
-									"value": "4QrcOUm6Wau+VuBX8g+IPg==",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "http://36.110.117.58:8000/sinoapi/rigister",
-							"protocol": "http",
-							"host": [
-								"36",
-								"110",
-								"117",
-								"58"
-							],
-							"port": "8000",
-							"path": [
-								"sinoapi",
-								"rigister"
-							]
-						}
-					},
-					"response": []
-				}
-			],
 			"protocolProfileBehavior": {}
 		}
 	],
