@@ -4,6 +4,7 @@
   "/report/emailSendConf": "/emailSendConf",
   "/report/workloads\\?mode=:mode": "/workloads?mode=:mode",
   "/report/cargo/emailSetting\\?type=:type": "/emailSetting?type=:type",
+  "/report/workloads/devices": "/devices",
   "/report/cargo/broken": "/broken",
   "/report/cargo/status\\?mode=:mode": "/status?mode=:mode"
 }

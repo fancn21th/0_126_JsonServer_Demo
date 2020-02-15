@@ -220,7 +220,11 @@
       "id": 1,
       "monthSendTime": null,
       "recipients": [
-        { "email": "455637644@qq.com2", "id": 12, "name": "冯超c" }
+        {
+          "email": "455637644@qq.com2",
+          "id": 12,
+          "name": "冯超c"
+        }
       ],
       "sendTime": "09:13",
       "subject": "人员工作量日报表邮件",
@@ -232,7 +236,11 @@
       "id": 2,
       "monthSendTime": null,
       "recipients": [
-        { "email": "455637644@qq.com2", "id": 12, "name": "冯超c" }
+        {
+          "email": "455637644@qq.com2",
+          "id": 12,
+          "name": "冯超c"
+        }
       ],
       "sendTime": "09:13",
       "subject": "人员工作量日报表邮件",
@@ -244,7 +252,11 @@
       "id": 3,
       "monthSendTime": 2,
       "recipients": [
-        { "email": "455637644@qq.com2", "id": 12, "name": "冯超c" }
+        {
+          "email": "455637644@qq.com2",
+          "id": 12,
+          "name": "冯超c"
+        }
       ],
       "sendTime": "09:13",
       "subject": "人员工作量日报表邮件",
@@ -255,7 +267,13 @@
       "daySendTime": null,
       "id": 4,
       "monthSendTime": null,
-      "recipients": [{ "email": "200735517@qq.com", "id": 14, "name": "郑伟" }],
+      "recipients": [
+        {
+          "email": "200735517@qq.com",
+          "id": 14,
+          "name": "郑伟"
+        }
+      ],
       "sendTime": "02:02",
       "subject": "货物状态报表",
       "type": "CARGO_STATUS_REPORT"
@@ -285,7 +303,13 @@
       "daySendTime": 2,
       "id": 7,
       "monthSendTime": null,
-      "recipients": [{ "email": "200735517@qq.com", "id": 22, "name": "6" }],
+      "recipients": [
+        {
+          "email": "200735517@qq.com",
+          "id": 22,
+          "name": "6"
+        }
+      ],
       "sendTime": "00:00",
       "subject": "叉车工作量月报表",
       "type": "DEV_WORKLOAD_MONTH_REPORT"
@@ -295,10 +319,38 @@
       "daySendTime": 2,
       "id": 8,
       "monthSendTime": 1,
-      "recipients": [{ "email": "200735517@qq.com", "id": 14, "name": "郑伟" }],
+      "recipients": [
+        {
+          "email": "200735517@qq.com",
+          "id": 14,
+          "name": "郑伟"
+        }
+      ],
       "sendTime": "00:03",
       "subject": "叉车工作量年报表",
       "type": "DEV_WORKLOAD_YEAR_REPORT"
+    }
+  ],
+  "devices": [
+    {
+      "date": "2019-07-01",
+      "devId": "E3",
+      "digitalDate": 1561910400000,
+      "move": "0",
+      "pick": "0",
+      "receipt": "0",
+      "shelve": "0",
+      "ship": "0"
+    },
+    {
+      "date": "2019-07-02",
+      "devId": "E3",
+      "digitalDate": 1561996800000,
+      "move": "0",
+      "pick": "0",
+      "receipt": "0",
+      "shelve": "0",
+      "ship": "0"
     }
   ],
   "broken": [
@@ -315,7 +367,12 @@
       ],
       "imgList": null,
       "inOrderNo": "INS4211136251920190830000006",
-      "isbro": [{ "brokenCount": 2, "brokenType": "标签泛红" }],
+      "isbro": [
+        {
+          "brokenCount": 2,
+          "brokenType": "标签泛红"
+        }
+      ],
       "itemNo": "1",
       "ownerCode": "DPTS",
       "quantity": 10,
