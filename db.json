@@ -146,5 +146,109 @@
         }
       ]
     }
+  ],
+  "recipients": [
+    {
+      "createTime": 1579072131000,
+      "email": "455637644@qq.com2",
+      "id": 12,
+      "name": "冯超c",
+      "updateTime": 1581582328000
+    },
+    {
+      "createTime": 1579076044000,
+      "email": "200735517@qq.com",
+      "id": 22,
+      "name": "6",
+      "updateTime": 1579076044000
+    }
+  ],
+  "emailSendConf": [
+    {
+      "smtpFromEmail": "dcgmail@126.com",
+      "smtpFromUserName": "邮件与订阅服务",
+      "smtpHost": "smtp.126.com",
+      "smtpPassword": "dcg2020",
+      "smtpPost": "25",
+      "smtpSslEnable": "true",
+      "smtpUserName": "dcgmail@126.com",
+      "id": 1
+    }
+  ],
+  "workloads": [
+    {
+      "id": 1,
+      "mode": "day",
+      "date": "2019-10-01",
+      "digitalDate": 1569859200000,
+      "move": "0",
+      "pick": "0",
+      "receipt": "0",
+      "shelve": "0",
+      "ship": "0",
+      "userName": "huanglongfei"
+    },
+    {
+      "id": 2,
+      "mode": "month",
+      "date": "2019-10-01",
+      "digitalDate": 1569859200000,
+      "move": "2",
+      "pick": "34",
+      "receipt": "23",
+      "shelve": "74",
+      "ship": "0",
+      "userName": "huanglongfei"
+    },
+    {
+      "id": 3,
+      "mode": "year",
+      "date": "2019-10-03",
+      "digitalDate": 1569859200000,
+      "move": "0",
+      "pick": "1",
+      "receipt": "9",
+      "shelve": "6",
+      "ship": "11",
+      "userName": "dengxinjian"
+    }
+  ],
+  "emailSetting": [
+    {
+      "content": "人员工作量日报表邮件",
+      "daySendTime": null,
+      "id": 1,
+      "monthSendTime": null,
+      "recipients": [
+        { "email": "455637644@qq.com2", "id": 12, "name": "冯超c" }
+      ],
+      "sendTime": "09:13",
+      "subject": "人员工作量日报表邮件",
+      "type": "DAY_REPORT"
+    },
+    {
+      "content": "人员工作量日报表邮件",
+      "daySendTime": 12,
+      "id": 2,
+      "monthSendTime": null,
+      "recipients": [
+        { "email": "455637644@qq.com2", "id": 12, "name": "冯超c" }
+      ],
+      "sendTime": "09:13",
+      "subject": "人员工作量日报表邮件",
+      "type": "MONTH_REPORT"
+    },
+    {
+      "content": "人员工作量日报表邮件",
+      "daySendTime": 12,
+      "id": 3,
+      "monthSendTime": 2,
+      "recipients": [
+        { "email": "455637644@qq.com2", "id": 12, "name": "冯超c" }
+      ],
+      "sendTime": "09:13",
+      "subject": "人员工作量日报表邮件",
+      "type": "MONTH_REPORT"
+    }
   ]
 }
