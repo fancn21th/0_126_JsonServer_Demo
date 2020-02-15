@@ -249,6 +249,101 @@
       "sendTime": "09:13",
       "subject": "人员工作量日报表邮件",
       "type": "MONTH_REPORT"
+    },
+    {
+      "content": "其他内容，其他内容",
+      "daySendTime": null,
+      "id": 4,
+      "monthSendTime": null,
+      "recipients": [{ "email": "200735517@qq.com", "id": 14, "name": "郑伟" }],
+      "sendTime": "02:02",
+      "subject": "货物状态报表",
+      "type": "CARGO_STATUS_REPORT"
+    },
+    {
+      "content": "货物破损报表",
+      "daySendTime": null,
+      "id": 5,
+      "monthSendTime": null,
+      "recipients": [],
+      "sendTime": null,
+      "subject": "货物破损报表",
+      "type": "CARGO_BROKEN_REPORT"
+    },
+    {
+      "content": "叉车工作量日报表",
+      "daySendTime": null,
+      "id": 6,
+      "monthSendTime": null,
+      "recipients": [],
+      "sendTime": null,
+      "subject": "叉车工作量日报表",
+      "type": "DEV_WORKLOAD_DAY_REPORT"
+    },
+    {
+      "content": "叉车工作量月报表",
+      "daySendTime": 2,
+      "id": 7,
+      "monthSendTime": null,
+      "recipients": [{ "email": "200735517@qq.com", "id": 22, "name": "6" }],
+      "sendTime": "00:00",
+      "subject": "叉车工作量月报表",
+      "type": "DEV_WORKLOAD_MONTH_REPORT"
+    },
+    {
+      "content": "叉车工作量年报表",
+      "daySendTime": 2,
+      "id": 8,
+      "monthSendTime": 1,
+      "recipients": [{ "email": "200735517@qq.com", "id": 14, "name": "郑伟" }],
+      "sendTime": "00:03",
+      "subject": "叉车工作量年报表",
+      "type": "DEV_WORKLOAD_YEAR_REPORT"
+    }
+  ],
+  "broken": [
+    {
+      "id": 1,
+      "brokenNum": 2,
+      "brokenType": "标签泛红",
+      "cargoGroupId": "5e256912a0318f0c34a769e8",
+      "cargoName": "发动机油11",
+      "currentShelf": "",
+      "img": [
+        "36af7300b2054acea6f7772f5211faac",
+        "891405c1b0fb4016bb0049a66aa1bd53"
+      ],
+      "imgList": null,
+      "inOrderNo": "INS4211136251920190830000006",
+      "isbro": [{ "brokenCount": 2, "brokenType": "标签泛红" }],
+      "itemNo": "1",
+      "ownerCode": "DPTS",
+      "quantity": 10,
+      "rfid": "191614120008"
+    }
+  ],
+  "status": [
+    {
+      "id": 1,
+      "mode": "day",
+      "beginTimestamp": null,
+      "cargoName": "发动机油11,液压油22",
+      "deadlineTimestamp": 1578909442000,
+      "endTimestamp": null,
+      "newShelfGroupNo": "",
+      "opDev": "",
+      "opSn": "",
+      "opSta": "undo",
+      "opStaff": "huanglongfei",
+      "opStaffName": "黄龙飞",
+      "opType": "receipt",
+      "orderNo": "INS4211136251920190830000007",
+      "orderTimestamp": 1578905842000,
+      "quantity": 0,
+      "rfid": "",
+      "shelfGroupNo": "",
+      "syncAck": "",
+      "syncStatus": "0"
     }
   ]
 }

@@ -2,5 +2,8 @@
   "/sinoapi/getcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize": "/cargoes?_view=:pageindex&_limit=:pagesize",
   "/report/recipients\\?pageNum=:pageNum\\&pageSize=:pageSize": "/recipients?_view=:pageNum&_limit=:pageSize",
   "/report/emailSendConf": "/emailSendConf",
-  "/report/workloads\\?mode=:mode": "/workloads?mode=:mode"
+  "/report/workloads\\?mode=:mode": "/workloads?mode=:mode",
+  "/report/cargo/emailSetting\\?type=:type": "/emailSetting?type=:type",
+  "/report/cargo/broken": "/broken",
+  "/report/cargo/status\\?mode=:mode": "/status?mode=:mode"
 }
