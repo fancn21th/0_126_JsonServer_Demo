@@ -6,5 +6,33 @@
   "/report/cargo/emailSetting\\?type=:type": "/emailSetting?type=:type",
   "/report/workloads/devices": "/devices",
   "/report/cargo/broken": "/broken",
-  "/report/cargo/status\\?mode=:mode": "/status?mode=:mode"
+  "/report/cargo/status\\?mode=:mode": "/status?mode=:mode",
+  "/sinoapi/getcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize\\&orderno=:orderno": "/cargoes?_page=:pageindex&_limit=:pagesize&InOrderNo=:orderno",
+  "/sinoapi/getcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize": "/cargoes?_page=:pageindex&_limit=:pagesize",
+
+  "/sinoapi/getoutcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize\\&orderno=:orderno": "/outcargoes?_page=:pageindex&_limit=:pagesize&OutOrderNo=:orderno",
+  "/sinoapi/getoutcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize": "/outcargoes?_page=:pageindex&_limit=:pagesize",
+
+  "/sinoapi/getoplist\\?pageindex=:pageindex\\&pagesize=:pagesize\\&orderno=:orderno": "/ops?_page=:pageindex&_limit=:pagesize&OrderNo=:orderno",
+  "/sinoapi/getoplist\\?pageindex=:pageindex\\&pagesize=:pagesize": "/ops?_page=:pageindex&_limit=:pagesize",
+
+  "/sinoapi/getuploadresult\\?opsn=:opsn": "/uploadresults?OpSN=:opsn",
+
+  "/sinoapi/updatesyncstatus\\?opsn=:opsn\\&status=:status": "/updatesyncstatus",
+
+  "/sinoapi/getoplistbytime\\?begin=:begin\\&end=:end": "/opsbytime",
+
+  "/sinoapi/getuploadresultbyinorder\\?inorder=:inorder": "/uploadresultbyinorder?InOrderNo=:inorder",
+
+  "/sinoapi/getivtlist\\?pageindex=:pageindex\\&pagesize=:pagesize": "/ivts?_page=:pageindex&_limit=:pagesize",
+
+  "/sinoapi/getcargolistivt\\?pageindex=:pageindex\\&pagesize=:pagesize\\&inventoryno=:inventoryno": "/cargoivts?_page=:pageindex&_limit=:pagesize",
+
+  "/sinoapi/exportworkloaddev\\?begin=:begin\\&end=:end\\&devtype=:devtype\\&mode=:mode": "/workloaddevs-:devtype/:mode",
+
+  "/sinoapi/exportworkloadstaff\\?begin=:begin\\&end=:end\\&mode=:mode": "/workloadstaffs/:mode",
+
+  "/sinoapi/exportshelfutilization\\?begin=:begin\\&end=:end": "/shelfutilizations",
+
+  "/sinoapi/cargobrokenbyinorder\\?inorder=:inorder": "/cargobrokens?InOrderNo=:inorder"
 }
