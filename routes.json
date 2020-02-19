@@ -1,3 +1,5 @@
 {
-  "/sinoapi/getcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize": "/cargoes?_view=:pageindex&_limit=:pagesize"
+  "/sinoapi/getcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize": "/cargoes?_view=:pageindex&_limit=:pagesize",
+  "/api/rule": "/rules",
+  "/api/login": "/login"
 }
