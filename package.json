@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server -H 0.0.0.0 --watch db.json --routes routes.json --middlewares middlewares/login.js middlewares/currentUser.js --port 3004"
+    "start": "json-server --watch db.json --routes routes.json --middlewares middlewares/login.js middlewares/currentUser.js --static /public --port 3000"
   },
   "keywords": [],
   "author": "",

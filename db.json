@@ -1,154 +1,974 @@
 {
-  "rules": [
-    {
-      "key": 0,
-      "disabled": true,
-      "href": "https://ant.design",
-      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png",
-      "name": "TradeCode 0",
-      "title": "一个任务名称 0",
-      "owner": "曲丽丽",
-      "desc": "这是一段描述",
-      "callNo": 460,
-      "status": 0,
-      "updatedAt": "2017-06-30T16:00:00.000Z",
-      "createdAt": "2017-06-30T16:00:00.000Z",
-      "progress": 90
+    "cargoes": [
+        {
+            "CargoGroupID": "5e231e65b8903116b4e9d10c",
+            "RFID": "191614123401",
+            "InOrderNo": "INS4211136251920190830000005",
+            "OwnerCode": "DPTS",
+            "ShelfGroup": "11A01A",
+            "CargoStatus": 4,
+            "SyncStatus": 0,
+            "Timestamp": 1579510907759,
+            "Isbro": [],
+            "Cargos": [
+                {
+                    "InOrderItemNo": "2",
+                    "CargoNo": "MA2228600126",
+                    "CargoName": "液压油22",
+                    "CargoBatchNo": "33",
+                    "Quantity": "5",
+                    "QuantityReal": "2",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                },
+                {
+                    "InOrderItemNo": "1",
+                    "CargoNo": "MA2228600125",
+                    "CargoName": "发动机油11",
+                    "CargoBatchNo": "BatchNo",
+                    "Quantity": "1",
+                    "QuantityReal": "1",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                },
+                {
+                    "InOrderItemNo": "2",
+                    "CargoNo": "MA2228600126",
+                    "CargoName": "液压油22",
+                    "CargoBatchNo": "33",
+                    "Quantity": "1",
+                    "QuantityReal": "1",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                },
+                {
+                    "InOrderItemNo": "1",
+                    "CargoNo": "MA2228600125",
+                    "CargoName": "发动机油11",
+                    "CargoBatchNo": "BatchNo",
+                    "Quantity": "1",
+                    "QuantityReal": "1",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                }
+            ]
+        },
+        {
+            "CargoGroupID": "5e255071b8903116b4e9d139",
+            "RFID": "191614005661",
+            "InOrderNo": "INS4211136251920190830000005",
+            "OwnerCode": "DPTS",
+            "ShelfGroup": "",
+            "CargoStatus": 1,
+            "SyncStatus": 0,
+            "Timestamp": 1578995422000,
+            "Isbro": [
+                {
+                    "BrokenCount": 2,
+                    "BrokenType": "外破"
+                }
+            ],
+            "Cargos": [
+                {
+                    "InOrderItemNo": "1",
+                    "CargoNo": "MA2228600125",
+                    "CargoName": "发动机油11",
+                    "CargoBatchNo": "BatchNo",
+                    "Quantity": "2",
+                    "QuantityReal": "2",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                }
+            ]
+        },
+        {
+            "CargoGroupID": "5e256912a0318f0c34a769e8",
+            "RFID": "191614120008",
+            "InOrderNo": "INS4211136251920190830000006",
+            "OwnerCode": "DPTS",
+            "ShelfGroup": "",
+            "CargoStatus": 1,
+            "SyncStatus": 1,
+            "Timestamp": 1579510037484,
+            "Isbro": [
+                {
+                    "BrokenCount": 2,
+                    "BrokenType": "标签泛红"
+                }
+            ],
+            "Cargos": [
+                {
+                    "InOrderItemNo": "1",
+                    "CargoNo": "MA2228600125",
+                    "CargoName": "发动机油11",
+                    "CargoBatchNo": "BatchNo",
+                    "Quantity": "10",
+                    "QuantityReal": "10",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                }
+            ]
+        },
+        {
+            "CargoGroupID": "5e450a0c13f9fc11389f9347",
+            "RFID": "191614000008",
+            "InOrderNo": "INS42111362519202001020114",
+            "OwnerCode": "DPTS",
+            "ShelfGroup": "",
+            "CargoStatus": 1,
+            "SyncStatus": 0,
+            "Timestamp": 1581582867262,
+            "Isbro": [],
+            "Cargos": [
+                {
+                    "InOrderItemNo": "1",
+                    "CargoNo": "3228600125",
+                    "CargoName": "石墨粉11",
+                    "CargoBatchNo": "22",
+                    "Quantity": "10",
+                    "QuantityReal": "10",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                },
+                {
+                    "InOrderItemNo": "4",
+                    "CargoNo": "3228600128",
+                    "CargoName": "乳胶",
+                    "CargoBatchNo": "34",
+                    "Quantity": "5",
+                    "QuantityReal": "5",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                },
+                {
+                    "InOrderItemNo": "5",
+                    "CargoNo": "3228600129",
+                    "CargoName": "香蕉胶",
+                    "CargoBatchNo": "34",
+                    "Quantity": "5",
+                    "QuantityReal": "5",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                }
+            ]
+        }
+    ],
+    "outcargoes": [
+        {
+            "OutOrderNo": "INS4211136251920190830000005",
+            "OutOrderItemNo": "1",
+            "CargoGroupID": "5e1fd7a2b8903116b4e9d0e7",
+            "RFID": "ship-191614120003",
+            "InOrderNo": "INS4211136251920190830000005",
+            "OwnerCode": "DPTS",
+            "ShelfGroup": "1120",
+            "CargoStatus": 9,
+            "SyncStatus": 0,
+            "Timestamp": 1579510788372,
+            "Isbro": [],
+            "Cargos": [
+                {
+                    "InOrderItemNo": "1",
+                    "CargoNo": "MA2228600125",
+                    "CargoName": "发动机油11",
+                    "CargoBatchNo": "BatchNo",
+                    "Quantity": "10",
+                    "QuantityReal": "1",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                },
+                {
+                    "InOrderItemNo": "1",
+                    "CargoNo": "MA2228600125",
+                    "CargoName": "发动机油11",
+                    "CargoBatchNo": "BatchNo",
+                    "Quantity": "1",
+                    "QuantityReal": "1",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                },
+                {
+                    "InOrderItemNo": "1",
+                    "CargoNo": "MA2228600125",
+                    "CargoName": "发动机油11",
+                    "CargoBatchNo": "BatchNo",
+                    "Quantity": "1",
+                    "QuantityReal": "1",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                },
+                {
+                    "InOrderItemNo": "1",
+                    "CargoNo": "MA2228600125",
+                    "CargoName": "发动机油11",
+                    "CargoBatchNo": "BatchNo",
+                    "Quantity": "1",
+                    "QuantityReal": "1",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                }
+            ]
+        },
+        {
+            "OutOrderNo": "INS4211136251920190830000005",
+            "OutOrderItemNo": "1",
+            "CargoGroupID": "5e1fd7d1b8903116b4e9d0e9",
+            "RFID": "ship-191614120004",
+            "InOrderNo": "INS4211136251920190830000005",
+            "OwnerCode": "DPTS",
+            "ShelfGroup": "1102",
+            "CargoStatus": 9,
+            "SyncStatus": 0,
+            "Timestamp": 1579509082469,
+            "Isbro": [],
+            "Cargos": [
+                {
+                    "InOrderItemNo": "1",
+                    "CargoNo": "MA2228600125",
+                    "CargoName": "发动机油11",
+                    "CargoBatchNo": "BatchNo",
+                    "Quantity": "2",
+                    "QuantityReal": "2",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                }
+            ]
+        }
+    ],
+    "ops": [
+        {
+            "OrderNo": "INS4211136251920190830000005",
+            "ItemNo": "1",
+            "OpSN": "5e1fd7a2b8903116b4e9d0e8",
+            "OpType": "receipt",
+            "OpStaff": "test3",
+            "OpStaffName": "测试3",
+            "OpDev": "M02",
+            "OpSta": "done",
+            "OrderTimestamp": "1533710303341",
+            "DeadlineTimestamp": "1533710399000",
+            "BeginTimestamp": "1579145149349",
+            "EndTimestamp": "1579145153056",
+            "RFID": "191614120003",
+            "ShelfGroupNo": null,
+            "NewShelfGroupNo": null,
+            "DestShelfGroupNo": null,
+            "CargoName": "发动机油11,发动机油11,发动机油11,发动机油11",
+            "Quantity": 4,
+            "SyncStatus": 1,
+            "SyncAck": null
+        },
+        {
+            "OrderNo": "INS4211136251920190830000005",
+            "ItemNo": "1",
+            "OpSN": "5e1fd7d1b8903116b4e9d0ea",
+            "OpType": "receipt",
+            "OpStaff": "test3",
+            "OpStaffName": "测试3",
+            "OpDev": "M05",
+            "OpSta": "done",
+            "OrderTimestamp": "1533710303341",
+            "DeadlineTimestamp": "1533710399000",
+            "BeginTimestamp": "1579145158993",
+            "EndTimestamp": "1579145170023",
+            "RFID": "191614120004",
+            "ShelfGroupNo": null,
+            "NewShelfGroupNo": null,
+            "DestShelfGroupNo": null,
+            "CargoName": "发动机油11",
+            "Quantity": 2,
+            "SyncStatus": 0,
+            "SyncAck": null
+        },
+        {
+            "OrderNo": "INS4211136251920190830000005",
+            "ItemNo": "2",
+            "OpSN": "5e231e65b8903116b4e9d10e",
+            "OpType": "receipt",
+            "OpStaff": "test3",
+            "OpStaffName": "测试3",
+            "OpDev": "E3",
+            "OpSta": "done",
+            "OrderTimestamp": "1533710303341",
+            "DeadlineTimestamp": "1533710399000",
+            "BeginTimestamp": "1579359823326",
+            "EndTimestamp": "1579359883326",
+            "RFID": "191614123401",
+            "ShelfGroupNo": null,
+            "NewShelfGroupNo": null,
+            "DestShelfGroupNo": null,
+            "CargoName": "液压油22,发动机油11,液压油22,发动机油11",
+            "Quantity": 5,
+            "SyncStatus": 0,
+            "SyncAck": null
+        },
+        {
+            "OrderNo": "INS4211136251920190830000005",
+            "ItemNo": "1",
+            "OpSN": "5e255071b8903116b4e9d13a",
+            "OpType": "receipt",
+            "OpStaff": "test3",
+            "OpStaffName": "测试3",
+            "OpDev": "M55",
+            "OpSta": "done",
+            "OrderTimestamp": "1533710303341",
+            "DeadlineTimestamp": "1533710399000",
+            "BeginTimestamp": "1578995122000",
+            "EndTimestamp": "1578995422000",
+            "RFID": "191614005661",
+            "ShelfGroupNo": null,
+            "NewShelfGroupNo": null,
+            "DestShelfGroupNo": null,
+            "CargoName": "发动机油11",
+            "Quantity": 2,
+            "SyncStatus": 0,
+            "SyncAck": null
+        },
+        {
+            "OrderNo": "INS4211136251920190830000005",
+            "ItemNo": "1",
+            "OpSN": "5e256266a0318f0c34a769dd",
+            "OpType": "shelve",
+            "OpStaff": "huanglongfei",
+            "OpStaffName": "黄龙飞",
+            "OpDev": "E3",
+            "OpSta": "done",
+            "OrderTimestamp": "1578905842000",
+            "DeadlineTimestamp": "1578909442000",
+            "BeginTimestamp": "1579508383649",
+            "EndTimestamp": "1579508408206",
+            "RFID": "191614120004",
+            "ShelfGroupNo": "",
+            "NewShelfGroupNo": "11C05B",
+            "DestShelfGroupNo": "11A01A",
+            "CargoName": "发动机油11",
+            "Quantity": 2,
+            "SyncStatus": 1,
+            "SyncAck": null
+        }
+    ],
+    "uploadresults": [
+        {
+            "OpSN": "5e1c4ea48ba6fc10743b0c0e",
+            "OpType": "receipt",
+            "CgID": "5e1c4cea8ba6fc10743b0c0a",
+            "InOrderNo": null,
+            "Param": "{\r\n  \"companyCode\": \"113606\",\r\n  \"whseCode\": \"11362519\",\r\n  \"projectCode\": \"SYNGENTA\",\r\n  \"type\": \"receipt\",\r\n  \"data\": [\r\n    {\r\n      \"inboundkey\": \"INS4211136251920190830000005\",\r\n      \"inboundlineno\": \"1\",\r\n      \"ownerCode\": \"DPTS\",\r\n      \"materialCode\": \"MA2228600125\",\r\n      \"materialName\": \"发动机油11\",\r\n      \"toLpn\": \"191614120061\",\r\n      \"qty\": 10,\r\n      \"creator\": \"test3\",\r\n      \"startTime\": \"2020/01/13 14:33:54\",\r\n      \"endTime\": \"2020/01/13 14:34:29\",\r\n      \"terminalId\": \"M67\"\r\n    }\r\n  ]\r\n}",
+            "Result": "Error invoking Rest Method:whNtRfidManager:feedback::null",
+            "Flag": false,
+            "StartTime": 1578897313265,
+            "ResultTime": 1578897313770
+        },
+        {
+            "OpSN": "5e1c4ea48ba6fc10743b0c0e",
+            "OpType": "shelve",
+            "CgID": "5e1c4cf38ba6fc10743b0c0c",
+            "InOrderNo": null,
+            "Param": "{\r\n  \"companyCode\": \"113606\",\r\n  \"whseCode\": \"11362519\",\r\n  \"projectCode\": \"SYNGENTA\",\r\n  \"type\": \"shelve\",\r\n  \"data\": [\r\n    {\r\n      \"inboundkey\": \"INS4211136251920190830000005\",\r\n      \"toLpn\": \"191614120003\",\r\n      \"toLoc\": \"11C05B\",\r\n      \"creator\": \"test3\",\r\n      \"startTime\": \"2020/01/13 14:43:30\",\r\n      \"endTime\": \"2020/01/13 14:43:56\",\r\n      \"terminalId\": \"E3\"\r\n    }\r\n  ]\r\n}",
+            "Result": "{\"message\":\"上架失败！\",\"flag\":\"0\"}",
+            "Flag": false,
+            "StartTime": 1578904196975,
+            "ResultTime": 1578904197364
+        },
+        {
+            "OpSN": "5e1c4ea48ba6fc10743b0c0e",
+            "OpType": "ship",
+            "CgID": "5e1c4cf38ba6fc10743b0c0c",
+            "InOrderNo": null,
+            "Param": "{\r\n  \"companyCode\": \"113606\",\r\n  \"whseCode\": \"11362519\",\r\n  \"projectCode\": \"SYNGENTA\",\r\n  \"type\": \"ship\",\r\n  \"data\": [\r\n    {\r\n      \"outboundkey\": \"OUS2531001366120191115000908\",\r\n      \"toLpn\": \"191614120003\",\r\n      \"creator\": \"test3\",\r\n      \"startTime\": \"2020/01/13 15:06:57\",\r\n      \"endTime\": \"2020/01/13 15:07:27\",\r\n      \"terminalId\": \"E3\"\r\n    }\r\n  ]\r\n}",
+            "Result": "{\"message\":\"没有匹配的RFID\",\"flag\":\"0\"}",
+            "Flag": false,
+            "StartTime": 1578904197661,
+            "ResultTime": 1578904197857
+        },
+        {
+            "OpSN": "5e1c4ea48ba6fc10743b0c0e",
+            "OpType": "shelve",
+            "CgID": "5e1c4cf38ba6fc10743b0c0c",
+            "InOrderNo": "INS4211136251920190830000005",
+            "Param": "{\r\n  \"companyCode\": \"113606\",\r\n  \"whseCode\": \"11362519\",\r\n  \"projectCode\": \"SYNGENTA\",\r\n  \"type\": \"shelve\",\r\n  \"data\": [\r\n    {\r\n      \"inboundkey\": \"INS4211136251920190830000005\",\r\n      \"toLpn\": \"191614120004\",\r\n      \"toLoc\": \"22A10B\",\r\n      \"creator\": \"test3\",\r\n      \"startTime\": \"1970/01/01 08:00:00\",\r\n      \"endTime\": \"2020/01/13 19:05:29\",\r\n      \"terminalId\": \"M67\"\r\n    }\r\n  ]\r\n}",
+            "Result": "{\"message\":\"上架失败！\",\"flag\":\"0\"}",
+            "Flag": false,
+            "StartTime": 1579082481518,
+            "ResultTime": 1579082481925
+        }
+    ],
+    "updatesyncstatus": {
+        "ok": "ok"
     },
-    {
-      "key": 1,
-      "disabled": false,
-      "href": "https://ant.design",
-      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png",
-      "name": "TradeCode 1",
-      "title": "一个任务名称 1",
-      "owner": "曲丽丽",
-      "desc": "这是一段描述",
-      "callNo": 666,
-      "status": 0,
-      "updatedAt": "2017-06-30T16:00:00.000Z",
-      "createdAt": "2017-06-30T16:00:00.000Z",
-      "progress": 41
-    },
-    {
-      "key": 2,
-      "disabled": false,
-      "href": "https://ant.design",
-      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png",
-      "name": "TradeCode 2",
-      "title": "一个任务名称 2",
-      "owner": "曲丽丽",
-      "desc": "这是一段描述",
-      "callNo": 206,
-      "status": 0,
-      "updatedAt": "2017-07-01T16:00:00.000Z",
-      "createdAt": "2017-07-01T16:00:00.000Z",
-      "progress": 17
-    },
-    {
-      "key": 3,
-      "disabled": false,
-      "href": "https://ant.design",
-      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png",
-      "name": "TradeCode 3",
-      "title": "一个任务名称 3",
-      "owner": "曲丽丽",
-      "desc": "这是一段描述",
-      "callNo": 310,
-      "status": 0,
-      "updatedAt": "2017-07-01T16:00:00.000Z",
-      "createdAt": "2017-07-01T16:00:00.000Z",
-      "progress": 35
-    },
-    {
-      "key": 4,
-      "disabled": false,
-      "href": "https://ant.design",
-      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png",
-      "name": "TradeCode 4",
-      "title": "一个任务名称 4",
-      "owner": "曲丽丽",
-      "desc": "这是一段描述",
-      "callNo": 474,
-      "status": 1,
-      "updatedAt": "2017-07-02T16:00:00.000Z",
-      "createdAt": "2017-07-02T16:00:00.000Z",
-      "progress": 68
-    },
-    {
-      "key": 5,
-      "disabled": false,
-      "href": "https://ant.design",
-      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png",
-      "name": "TradeCode 5",
-      "title": "一个任务名称 5",
-      "owner": "曲丽丽",
-      "desc": "这是一段描述",
-      "callNo": 735,
-      "status": 1,
-      "updatedAt": "2017-07-02T16:00:00.000Z",
-      "createdAt": "2017-07-02T16:00:00.000Z",
-      "progress": 63
-    },
-    {
-      "key": 6,
-      "disabled": true,
-      "href": "https://ant.design",
-      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png",
-      "name": "TradeCode 6",
-      "title": "一个任务名称 6",
-      "owner": "曲丽丽",
-      "desc": "这是一段描述",
-      "callNo": 545,
-      "status": 3,
-      "updatedAt": "2017-07-03T16:00:00.000Z",
-      "createdAt": "2017-07-03T16:00:00.000Z",
-      "progress": 27
-    },
-    {
-      "key": 7,
-      "disabled": false,
-      "href": "https://ant.design",
-      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png",
-      "name": "TradeCode 7",
-      "title": "一个任务名称 7",
-      "owner": "曲丽丽",
-      "desc": "这是一段描述",
-      "callNo": 430,
-      "status": 2,
-      "updatedAt": "2017-07-03T16:00:00.000Z",
-      "createdAt": "2017-07-03T16:00:00.000Z",
-      "progress": 85
-    },
-    {
-      "key": 8,
-      "disabled": false,
-      "href": "https://ant.design",
-      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png",
-      "name": "TradeCode 8",
-      "title": "一个任务名称 8",
-      "owner": "曲丽丽",
-      "desc": "这是一段描述",
-      "callNo": 647,
-      "status": 3,
-      "updatedAt": "2017-07-04T16:00:00.000Z",
-      "createdAt": "2017-07-04T16:00:00.000Z",
-      "progress": 52
-    },
-    {
-      "key": 9,
-      "disabled": false,
-      "href": "https://ant.design",
-      "avatar": "https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png",
-      "name": "TradeCode 9",
-      "title": "一个任务名称 9",
-      "owner": "曲丽丽",
-      "desc": "这是一段描述",
-      "callNo": 506,
-      "status": 0,
-      "updatedAt": "2017-07-04T16:00:00.000Z",
-      "createdAt": "2017-07-04T16:00:00.000Z",
-      "progress": 4
-    }
-  ]
+    "opsbytime": [
+        {
+            "OpType": "receipt",
+            "OrderNo": "INS4211136251920190830000007",
+            "OpSN": "",
+            "OpStaff": "huanglongfei",
+            "OpStaffName": "黄龙飞",
+            "OpDev": "",
+            "OpSta": "undo",
+            "OrderTimestamp": "1578905842000",
+            "DeadlineTimestamp": "1578909442000",
+            "BeginTimestamp": "",
+            "EndTimestamp": "",
+            "RFID": "",
+            "ShelfGroupNo": "",
+            "NewShelfGroupNo": "",
+            "DestShelfGroupNo": "",
+            "CargoName": "发动机油11,液压油22",
+            "Quantity": "0",
+            "SyncStatus": 0,
+            "SyncAck": ""
+        }
+    ],
+    "uploadresultbyinorder": [
+        {
+            "OpSN": "5e1c4cea8ba6fc10743b0c0b",
+            "OpType": "receipt",
+            "CgID": "5e1c4cea8ba6fc10743b0c0a",
+            "InOrderNo": "INS4211136251920190830000005",
+            "Param": "{\r\n  \"companyCode\": \"113606\",\r\n  \"whseCode\": \"11362519\",\r\n  \"projectCode\": \"SYNGENTA\",\r\n  \"type\": \"receipt\",\r\n  \"data\": [\r\n    {\r\n      \"inboundkey\": \"INS4211136251920190830000005\",\r\n      \"inboundlineno\": \"1\",\r\n      \"ownerCode\": \"DPTS\",\r\n      \"materialCode\": \"MA2228600125\",\r\n      \"materialName\": \"发动机油11\",\r\n      \"toLpn\": \"191614120003\",\r\n      \"qty\": 10,\r\n      \"creator\": \"test3\",\r\n      \"startTime\": \"2020/01/13 15:19:49\",\r\n      \"endTime\": \"2020/01/13 20:19:49\",\r\n      \"terminalId\": \"M67\"\r\n    }\r\n  ]\r\n}",
+            "Result": "Error invoking Rest Method:whNtRfidManager:feedback::null",
+            "Flag": false,
+            "StartTime": 1579082480539,
+            "ResultTime": 1579082480903
+        },
+        {
+            "OpSN": "5e1c4cf38ba6fc10743b0c0d",
+            "OpType": "receipt",
+            "CgID": "5e1c4cf38ba6fc10743b0c0c",
+            "InOrderNo": "INS4211136251920190830000005",
+            "Param": "{\r\n  \"companyCode\": \"113606\",\r\n  \"whseCode\": \"11362519\",\r\n  \"projectCode\": \"SYNGENTA\",\r\n  \"type\": \"receipt\",\r\n  \"data\": [\r\n    {\r\n      \"inboundkey\": \"INS4211136251920190830000005\",\r\n      \"inboundlineno\": \"2\",\r\n      \"ownerCode\": \"DPTS\",\r\n      \"materialCode\": \"MA2228600126\",\r\n      \"materialName\": \"液压油22\",\r\n      \"toLpn\": \"191614120004\",\r\n      \"qty\": 5,\r\n      \"creator\": \"test3\",\r\n      \"startTime\": \"2020/01/13 15:19:49\",\r\n      \"endTime\": \"2020/01/13 20:19:49\",\r\n      \"terminalId\": \"M67\"\r\n    }\r\n  ]\r\n}",
+            "Result": "Error invoking Rest Method:whNtRfidManager:feedback::null",
+            "Flag": false,
+            "StartTime": 1579082481091,
+            "ResultTime": 1579082481461
+        },
+        {
+            "OpSN": "5e1c4ea48ba6fc10743b0c0e",
+            "OpType": "shelve",
+            "CgID": "5e1c4cf38ba6fc10743b0c0c",
+            "InOrderNo": "INS4211136251920190830000005",
+            "Param": "{\r\n  \"companyCode\": \"113606\",\r\n  \"whseCode\": \"11362519\",\r\n  \"projectCode\": \"SYNGENTA\",\r\n  \"type\": \"shelve\",\r\n  \"data\": [\r\n    {\r\n      \"inboundkey\": \"INS4211136251920190830000005\",\r\n      \"toLpn\": \"191614120004\",\r\n      \"toLoc\": \"22A10B\",\r\n      \"creator\": \"test3\",\r\n      \"startTime\": \"1970/01/01 08:00:00\",\r\n      \"endTime\": \"2020/01/13 19:05:29\",\r\n      \"terminalId\": \"M67\"\r\n    }\r\n  ]\r\n}",
+            "Result": "{\"message\":\"上架失败！\",\"flag\":\"0\"}",
+            "Flag": false,
+            "StartTime": 1579082481518,
+            "ResultTime": 1579082481925
+        },
+        {
+            "OpSN": "5e1c53175574cd0db098877f",
+            "OpType": "move",
+            "CgID": "5e1c4cf38ba6fc10743b0c0c",
+            "InOrderNo": "INS4211136251920190830000005",
+            "Param": "{\r\n  \"companyCode\": \"113606\",\r\n  \"whseCode\": \"11362519\",\r\n  \"projectCode\": \"SYNGENTA\",\r\n  \"type\": \"move\",\r\n  \"data\": [\r\n    {\r\n      \"movekey\": \"WVS2061001366120191115000301\",\r\n      \"movelineno\": \"00001\",\r\n      \"toLpn\": \"191614120004\",\r\n      \"fromLoc\": \"22A10B\",\r\n      \"toLoc\": \"11A01A\",\r\n      \"creator\": \"test3\",\r\n      \"startTime\": \"2020/01/13 19:24:21\",\r\n      \"endTime\": \"2020/01/13 19:24:37\",\r\n      \"terminalId\": \"E3\"\r\n    }\r\n  ]\r\n}",
+            "Result": "{\"message\":\"操作成功!\",\"flag\":\"100\"}",
+            "Flag": true,
+            "StartTime": 1579082481937,
+            "ResultTime": 1579082482212
+        },
+        {
+            "OpSN": "5e1c53d05574cd0db0988782",
+            "OpType": "pick",
+            "CgID": "5e1c4cf38ba6fc10743b0c0c",
+            "InOrderNo": "INS4211136251920190830000005",
+            "Param": "{\r\n  \"companyCode\": \"113606\",\r\n  \"whseCode\": \"11362519\",\r\n  \"projectCode\": \"SYNGENTA\",\r\n  \"type\": \"pick\",\r\n  \"data\": [\r\n    {\r\n      \"outboundkey\": \"OUS2531001366120191115000908\",\r\n      \"toLpn\": \"191614120004\",\r\n      \"toLoc\": \"2201\",\r\n      \"creator\": \"test3\",\r\n      \"startTime\": \"1970/01/01 08:00:00\",\r\n      \"endTime\": \"2020/01/13 19:28:18\",\r\n      \"terminalId\": \"E3\"\r\n    }\r\n  ]\r\n}",
+            "Result": "{\"message\":\"操作成功!\",\"flag\":\"100\"}",
+            "Flag": true,
+            "StartTime": 1579082482219,
+            "ResultTime": 1579082482464
+        },
+        {
+            "OpSN": "5e1c4ea48ba6fc10743b0c0e",
+            "OpType": "receipt",
+            "CgID": "5e1c4cea8ba6fc10743b0c0a",
+            "InOrderNo": null,
+            "Param": "{\r\n  \"companyCode\": \"113606\",\r\n  \"whseCode\": \"11362519\",\r\n  \"projectCode\": \"SYNGENTA\",\r\n  \"type\": \"receipt\",\r\n  \"data\": [\r\n    {\r\n      \"inboundkey\": \"INS4211136251920190830000005\",\r\n      \"inboundlineno\": \"1\",\r\n      \"ownerCode\": \"DPTS\",\r\n      \"materialCode\": \"MA2228600125\",\r\n      \"materialName\": \"发动机油11\",\r\n      \"toLpn\": \"191614120061\",\r\n      \"qty\": 10,\r\n      \"creator\": \"test3\",\r\n      \"startTime\": \"2020/01/13 14:33:54\",\r\n      \"endTime\": \"2020/01/13 14:34:29\",\r\n      \"terminalId\": \"M67\"\r\n    }\r\n  ]\r\n}",
+            "Result": "Error invoking Rest Method:whNtRfidManager:feedback::null",
+            "Flag": false,
+            "StartTime": 1578897313265,
+            "ResultTime": 1578897313770
+        },
+        {
+            "OpSN": "5e1c4ea48ba6fc10743b0c0e",
+            "OpType": "shelve",
+            "CgID": "5e1c4cf38ba6fc10743b0c0c",
+            "InOrderNo": null,
+            "Param": "{\r\n  \"companyCode\": \"113606\",\r\n  \"whseCode\": \"11362519\",\r\n  \"projectCode\": \"SYNGENTA\",\r\n  \"type\": \"shelve\",\r\n  \"data\": [\r\n    {\r\n      \"inboundkey\": \"INS4211136251920190830000005\",\r\n      \"toLpn\": \"191614120003\",\r\n      \"toLoc\": \"11C05B\",\r\n      \"creator\": \"test3\",\r\n      \"startTime\": \"2020/01/13 14:43:30\",\r\n      \"endTime\": \"2020/01/13 14:43:56\",\r\n      \"terminalId\": \"E3\"\r\n    }\r\n  ]\r\n}",
+            "Result": "{\"message\":\"上架失败！\",\"flag\":\"0\"}",
+            "Flag": false,
+            "StartTime": 1578904196975,
+            "ResultTime": 1578904197364
+        },
+        {
+            "OpSN": "5e1c4ea48ba6fc10743b0c0e",
+            "OpType": "pick",
+            "CgID": "5e1c4cf38ba6fc10743b0c0c",
+            "InOrderNo": null,
+            "Param": "{\r\n  \"companyCode\": \"113606\",\r\n  \"whseCode\": \"11362519\",\r\n  \"projectCode\": \"SYNGENTA\",\r\n  \"type\": \"pick\",\r\n  \"data\": [\r\n    {\r\n      \"outboundkey\": \"OUS2531001366120191115000908\",\r\n      \"toLpn\": \"191614120003\",\r\n      \"toLoc\": \"11A01A\",\r\n      \"creator\": \"test3\",\r\n      \"startTime\": \"2020/01/13 14:52:13\",\r\n      \"endTime\": \"2020/01/13 15:01:37\",\r\n      \"terminalId\": \"E3\"\r\n    }\r\n  ]\r\n}",
+            "Result": "{\"message\":\"操作成功!\",\"flag\":\"100\"}",
+            "Flag": true,
+            "StartTime": 1578904197447,
+            "ResultTime": 1578904197651
+        }
+    ],
+    "ivts": [
+        "20200113-001",
+        "20200120-001"
+    ],
+    "cargoivts": [
+        {
+            "CargoGroupID": "5e231e65b8903116b4e9d10c",
+            "RFID": "191614123401",
+            "InOrderNo": "INS4211136251920190830000005",
+            "OwnerCode": "DPTS",
+            "ShelfGroup": "",
+            "CargoStatus": 1,
+            "IvtStatus": 2,
+            "Timestamp": 1579359848008,
+            "Isbro": [],
+            "Cargos": [
+                {
+                    "InOrderItemNo": "2",
+                    "CargoNo": "MA2228600126",
+                    "CargoName": "液压油22",
+                    "CargoBatchNo": "33",
+                    "Quantity": "5",
+                    "QuantityReal": "2",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                },
+                {
+                    "InOrderItemNo": "1",
+                    "CargoNo": "MA2228600125",
+                    "CargoName": "发动机油11",
+                    "CargoBatchNo": "BatchNo",
+                    "Quantity": "1",
+                    "QuantityReal": "1",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                },
+                {
+                    "InOrderItemNo": "2",
+                    "CargoNo": "MA2228600126",
+                    "CargoName": "液压油22",
+                    "CargoBatchNo": "33",
+                    "Quantity": "1",
+                    "QuantityReal": "1",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                },
+                {
+                    "InOrderItemNo": "1",
+                    "CargoNo": "MA2228600125",
+                    "CargoName": "发动机油11",
+                    "CargoBatchNo": "BatchNo",
+                    "Quantity": "1",
+                    "QuantityReal": "1",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                }
+            ]
+        },
+        {
+            "CargoGroupID": "5e255071b8903116b4e9d139",
+            "RFID": "191614005661",
+            "InOrderNo": "INS4211136251920190830000005",
+            "OwnerCode": "DPTS",
+            "ShelfGroup": "",
+            "CargoStatus": 1,
+            "IvtStatus": 2,
+            "Timestamp": 1579503732036,
+            "Isbro": [
+                {
+                    "BrokenCount": 2,
+                    "BrokenType": "外破"
+                }
+            ],
+            "Cargos": [
+                {
+                    "InOrderItemNo": "1",
+                    "CargoNo": "MA2228600125",
+                    "CargoName": "发动机油11",
+                    "CargoBatchNo": "BatchNo",
+                    "Quantity": "2",
+                    "QuantityReal": "2",
+                    "Package": "Package",
+                    "DagLvl": "3",
+                    "SpeRemark": "SpeRemark",
+                    "MSDS": "MSDS"
+                }
+            ]
+        },
+        {
+            "CargoGroupID": "5e1c4cea8ba6fc10743b0c0a",
+            "RFID": "191614120003",
+            "InOrderNo": "INS4211136251920190830000005",
+            "OwnerCode": "DPTS",
+            "ShelfGroup": "",
+            "CargoStatus": 1,
+            "IvtStatus": 0,
+            "Timestamp": 1578913003762,
+            "Isbro": [],
+            "Cargos": []
+        }
+    ],
+    "workloaddevs-0": [
+        {
+            "id": "day",
+            "data": [
+                {
+                    "DevID": "M55",
+                    "Date": "2020-01-01",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                },
+                {
+                    "DevID": "M55",
+                    "Date": "2020-01-02",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                },
+                {
+                    "DevID": "M55",
+                    "Date": "2020-01-03",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                },
+                {
+                    "DevID": "M55",
+                    "Date": "2020-01-04",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                },
+                {
+                    "DevID": "M55",
+                    "Date": "2020-01-05",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                },
+                {
+                    "DevID": "M55",
+                    "Date": "2020-01-06",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                },
+                {
+                    "DevID": "M55",
+                    "Date": "2020-01-07",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                }
+            ]
+        },
+        {
+            "id": "month",
+            "data": [
+                {
+                    "DevID": "M55",
+                    "Date": "2020-01",
+                    "Receipt": 2,
+                    "Shelve": 1,
+                    "Move": 1,
+                    "Pick": 1,
+                    "Ship": 1
+                },
+                {
+                    "DevID": "M55",
+                    "Date": "2020-02",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                },
+                {
+                    "DevID": "M01",
+                    "Date": "2020-01",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 1,
+                    "Pick": 0,
+                    "Ship": 0
+                },
+                {
+                    "DevID": "M01",
+                    "Date": "2020-02",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                }
+            ]
+        },
+        {
+            "id": "year",
+            "data": [
+                {
+                    "DevID": "M55",
+                    "Date": "2020",
+                    "Receipt": 2,
+                    "Shelve": 1,
+                    "Move": 1,
+                    "Pick": 1,
+                    "Ship": 1
+                },
+                {
+                    "DevID": "M01",
+                    "Date": "2020",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 1,
+                    "Pick": 0,
+                    "Ship": 0
+                }
+            ]
+        }
+    ],
+    "workloaddevs-1": [
+        {
+            "id": "day",
+            "data": [
+                {
+                    "DevID": "E3",
+                    "Date": "2020-01-01",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                },
+                {
+                    "DevID": "E3",
+                    "Date": "2020-01-02",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                }
+            ]
+        },
+        {
+            "id": "month",
+            "data": [
+                {
+                    "DevID": "E3",
+                    "Date": "2020-01",
+                    "Receipt": 0,
+                    "Shelve": 2,
+                    "Move": 1,
+                    "Pick": 1,
+                    "Ship": 1
+                },
+                {
+                    "DevID": "E3",
+                    "Date": "2020-02",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                }
+            ]
+        },
+        {
+            "id": "year",
+            "data": [
+                {
+                    "DevID": "E3",
+                    "Date": "2020",
+                    "Receipt": 0,
+                    "Shelve": 2,
+                    "Move": 1,
+                    "Pick": 1,
+                    "Ship": 1
+                }
+            ]
+        }
+    ],
+    "workloadstaffs": [
+        {
+            "id": "day",
+            "data": [
+                {
+                    "UserName": "huanglongfei",
+                    "Date": "2020-01-01",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                },
+                {
+                    "UserName": "huanglongfei",
+                    "Date": "2020-01-02",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                },
+                {
+                    "UserName": "huanglongfei",
+                    "Date": "2020-01-03",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                }
+            ]
+        },
+        {
+            "id": "month",
+            "data": [
+                {
+                    "UserName": "huanglongfei",
+                    "Date": "2020-01",
+                    "Receipt": 2,
+                    "Shelve": 3,
+                    "Move": 3,
+                    "Pick": 2,
+                    "Ship": 2
+                },
+                {
+                    "UserName": "huanglongfei",
+                    "Date": "2020-02",
+                    "Receipt": 0,
+                    "Shelve": 0,
+                    "Move": 0,
+                    "Pick": 0,
+                    "Ship": 0
+                }
+            ]
+        },
+        {
+            "id": "year",
+            "data": [
+                {
+                    "UserName": "huanglongfei",
+                    "Date": "2020",
+                    "Receipt": 2,
+                    "Shelve": 3,
+                    "Move": 3,
+                    "Pick": 2,
+                    "Ship": 2
+                }
+            ]
+        }
+    ],
+    "shelfutilizations": [
+        {
+            "Time": "2020-01-10",
+            "Cp": 0.7931034482758621
+        },
+        {
+            "Time": "2020-01-13",
+            "Cp": 0.96875
+        },
+        {
+            "Time": "2020-01-15",
+            "Cp": 1
+        }
+    ],
+    "cargobrokens": [
+        {
+            "CargoGroupID": "5e255071b8903116b4e9d139",
+            "RFID": "191614005661",
+            "InOrderNo": "INS4211136251920190830000005",
+            "ItemNo": "1",
+            "OwnerCode": "DPTS",
+            "CurrentShelf": "",
+            "CargoName": "发动机油11",
+            "Quantity": 2,
+            "Isbro": [
+                {
+                    "BrokenCount": 2,
+                    "BrokenType": "外破"
+                }
+            ],
+            "Img": [
+                "c6409f1d619640d9855aa70e09078fc9",
+                "65aaa2d9aeb34ca49086c67631b45793",
+                "glxss5267c608043e484886cd54dbbcbb0c43",
+                "glxssc41816312419449fb134667658b637ec"
+            ]
+        },
+        {
+            "CargoGroupID": "5e256912a0318f0c34a769e8",
+            "RFID": "191614120008",
+            "InOrderNo": "INS4211136251920190830000006",
+            "ItemNo": "1",
+            "OwnerCode": "DPTS",
+            "CurrentShelf": "",
+            "CargoName": "发动机油11",
+            "Quantity": 10,
+            "Isbro": [
+                {
+                    "BrokenCount": 2,
+                    "BrokenType": "标签泛红"
+                }
+            ],
+            "Img": [
+                "36af7300b2054acea6f7772f5211faac",
+                "891405c1b0fb4016bb0049a66aa1bd53"
+            ]
+        }
+    ]  
 }
