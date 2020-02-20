@@ -1193,35 +1193,5 @@
           "brokenCount": 2,
           "brokenType": "标签泛红"
         }
-      ],
-      "itemNo": "1",
-      "ownerCode": "DPTS",
-      "quantity": 10,
-      "rfid": "191614120008"
-    }
-  ],
-  "status": [
-    {
-      "id": 1,
-      "mode": "day",
-      "beginTimestamp": null,
-      "cargoName": "发动机油11,液压油22",
-      "deadlineTimestamp": 1578909442000,
-      "endTimestamp": null,
-      "newShelfGroupNo": "",
-      "opDev": "",
-      "opSn": "",
-      "opSta": "undo",
-      "opStaff": "huanglongfei",
-      "opStaffName": "黄龙飞",
-      "opType": "receipt",
-      "orderNo": "INS4211136251920190830000007",
-      "orderTimestamp": 1578905842000,
-      "quantity": 0,
-      "rfid": "",
-      "shelfGroupNo": "",
-      "syncAck": "",
-      "syncStatus": "0"
-    }
-  ]
+    ]  
 }
