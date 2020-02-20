@@ -1,4 +1,8 @@
 {
+  "/login/account": "/login",
+
+  "/currentUser": "/currentUser",
+
   "/sinoapi/getcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize\\&orderno=:orderno": "/cargoes?_page=:pageindex&_limit=:pagesize&InOrderNo=:orderno",
   "/sinoapi/getcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize": "/cargoes?_page=:pageindex&_limit=:pagesize",
 
@@ -27,5 +31,4 @@
   "/sinoapi/exportshelfutilization\\?begin=:begin\\&end=:end": "/shelfutilizations",
 
   "/sinoapi/cargobrokenbyinorder\\?inorder=:inorder": "/cargobrokens?InOrderNo=:inorder"
-
 }
