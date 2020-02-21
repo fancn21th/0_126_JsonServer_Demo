@@ -1,0 +1,446 @@
+{
+  "info": {
+    "_postman_id": "ef9760ce-d3bc-4db7-b678-1b5506ae04ff",
+    "name": "邮件订阅mock api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "订阅服务",
+      "item": [
+        {
+          "name": "获取收件人列表",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/report/recipients?pageNum=1&pageSize=20",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["report", "recipients"],
+              "query": [
+                {
+                  "key": "pageNum",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "20"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "新增收件人",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "email",
+                  "value": "2345453453@qq.com",
+                  "type": "text"
+                },
+                {
+                  "key": "name",
+                  "value": "帅哥",
+                  "type": "text"
+                },
+                {
+                  "key": "updateTime",
+                  "value": "1579076044000",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:3000/recipients",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["recipients"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "编辑收件人",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "email",
+                  "value": "aavca@qq.com",
+                  "type": "text"
+                },
+                {
+                  "key": "name",
+                  "value": "帅哥",
+                  "type": "text"
+                },
+                {
+                  "key": "updateTime",
+                  "value": "1579076044000",
+                  "type": "text"
+                },
+                {
+                  "key": "",
+                  "value": "",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:3000/recipients/23",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["recipients", "23"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "删除收件人",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/recipients/23",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["recipients", "23"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "发送账号配置",
+      "item": [
+        {
+          "name": "获取发送账号信息",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/report/emailSendConf",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["report", "emailSendConf"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "编辑发送账号信息",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "smtpFromEmail",
+                  "value": "dcgmail@126.com",
+                  "type": "text"
+                },
+                {
+                  "key": "smtpFromUserName",
+                  "value": "邮件与订阅服务",
+                  "type": "text"
+                },
+                {
+                  "key": "smtpHost",
+                  "value": "smtp.126.com",
+                  "type": "text"
+                },
+                {
+                  "key": "smtpPassword",
+                  "value": "dcg2020",
+                  "type": "text"
+                },
+                {
+                  "key": "smtpPost",
+                  "value": "25",
+                  "type": "text"
+                },
+                {
+                  "key": "smtpSslEnable",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "smtpUserName",
+                  "value": "dcgmail@126.com",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:3000/emailSendConf/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["emailSendConf", "1"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "人员工作量报表",
+      "item": [
+        {
+          "name": "获取人员工作量列表",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/report/workloads?mode=day&startTime=1561910400000&endTime=1581753599999",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["report", "workloads"],
+              "query": [
+                {
+                  "key": "mode",
+                  "value": "day"
+                },
+                {
+                  "key": "startTime",
+                  "value": "1561910400000"
+                },
+                {
+                  "key": "endTime",
+                  "value": "1581753599999"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "获取工作量邮件配置",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/report/cargo/emailSetting?type=DAY_REPORT",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["report", "cargo", "emailSetting"],
+              "query": [
+                {
+                  "key": "type",
+                  "value": "DAY_REPORT"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "修改工作量邮件配置（与叉车共用）",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "content",
+                  "value": "人员工作量日报表邮件",
+                  "type": "text"
+                },
+                {
+                  "key": "daySendTime",
+                  "value": "",
+                  "type": "text"
+                },
+                {
+                  "key": "monthSendTime",
+                  "value": "",
+                  "type": "text"
+                },
+                {
+                  "key": "sendTime",
+                  "value": "09:56",
+                  "type": "text"
+                },
+                {
+                  "key": "subject",
+                  "value": "人员工作量日报表邮件",
+                  "type": "text"
+                },
+                {
+                  "key": "type",
+                  "value": "DAY_REPORT",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:3000/emailSetting/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["emailSetting", "1"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "叉车工作量报表",
+      "item": [
+        {
+          "name": "获取叉车工作量列表",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/report/workloads/devices?startTime=1581696000000&endTime=1581782399999&mode=day&devType=1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["report", "workloads", "devices"],
+              "query": [
+                {
+                  "key": "startTime",
+                  "value": "1581696000000"
+                },
+                {
+                  "key": "endTime",
+                  "value": "1581782399999"
+                },
+                {
+                  "key": "mode",
+                  "value": "day"
+                },
+                {
+                  "key": "devType",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "货物破损信息报表",
+      "item": [
+        {
+          "name": "获取货物破损信息列表",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/report/cargo/broken?startTime=1581696000000&endTime=1581782399999&mode=day&devType=1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["report", "cargo", "broken"],
+              "query": [
+                {
+                  "key": "startTime",
+                  "value": "1581696000000"
+                },
+                {
+                  "key": "endTime",
+                  "value": "1581782399999"
+                },
+                {
+                  "key": "mode",
+                  "value": "day"
+                },
+                {
+                  "key": "devType",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "货物状态信息",
+      "item": [
+        {
+          "name": "获取货物状态信息列表",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/report/cargo/status?mode=day",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["report", "cargo", "status"],
+              "query": [
+                {
+                  "key": "mode",
+                  "value": "day"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    }
+  ],
+  "protocolProfileBehavior": {}
+}

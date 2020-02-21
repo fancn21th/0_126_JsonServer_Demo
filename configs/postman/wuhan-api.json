@@ -1,0 +1,426 @@
+{
+  "info": {
+    "_postman_id": "a1151d80-0f27-4a7e-b058-80d393eb7219",
+    "name": "邮件订阅api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "订阅服务",
+      "item": [
+        {
+          "name": "收件人列表获取",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://10.3.69.26:9090/report/recipients?pageNum=1&pageSize=20",
+              "protocol": "http",
+              "host": ["10", "3", "69", "26"],
+              "port": "9090",
+              "path": ["report", "recipients"],
+              "query": [
+                {
+                  "key": "pageNum",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "20"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "新增收件人",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\":\"bbb\",\"email\":\"aaa@qq.com\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://10.3.69.26:9090/report/recipients",
+              "protocol": "http",
+              "host": ["10", "3", "69", "26"],
+              "port": "9090",
+              "path": ["report", "recipients"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "编辑收件人",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\":\"aaa\",\"email\":\"aaa@qq.com\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://10.3.69.26:9090/report/recipients/41",
+              "protocol": "http",
+              "host": ["10", "3", "69", "26"],
+              "port": "9090",
+              "path": ["report", "recipients", "41"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "删除收件人",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://10.3.69.26:9097/api/report/recipients/18",
+              "protocol": "http",
+              "host": ["10", "3", "69", "26"],
+              "port": "9097",
+              "path": ["api", "report", "recipients", "18"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "发送账号配置",
+      "item": [
+        {
+          "name": "获取发送账号信息",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://10.3.69.26:9090/report/emailSendConfig",
+              "protocol": "http",
+              "host": ["10", "3", "69", "26"],
+              "port": "9090",
+              "path": ["report", "emailSendConfig"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "编辑发送账号信息",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "smtpFromEmail",
+                  "value": "dcgmail@126.com",
+                  "type": "text"
+                },
+                {
+                  "key": "smtpFromUserName",
+                  "value": "邮件与订阅服务",
+                  "type": "text"
+                },
+                {
+                  "key": "smtpHost",
+                  "value": "smtp.126.com",
+                  "type": "text"
+                },
+                {
+                  "key": "smtpPassword",
+                  "value": "dcg2020",
+                  "type": "text"
+                },
+                {
+                  "key": "smtpPost",
+                  "value": "255",
+                  "type": "text"
+                },
+                {
+                  "key": "smtpSslEnable",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "smtpUserName",
+                  "value": "dcgmail@126.com",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://10.3.69.26:9097/api/report/emailSendConfig",
+              "protocol": "http",
+              "host": ["10", "3", "69", "26"],
+              "port": "9097",
+              "path": ["api", "report", "emailSendConfig"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "人员工作量报表",
+      "item": [
+        {
+          "name": "获取人员工作量列表",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://10.3.69.26:9090/report/workloads?startTime=1559318400000&endTime=1581753599999&mode=day",
+              "protocol": "http",
+              "host": ["10", "3", "69", "26"],
+              "port": "9090",
+              "path": ["report", "workloads"],
+              "query": [
+                {
+                  "key": "startTime",
+                  "value": "1559318400000"
+                },
+                {
+                  "key": "endTime",
+                  "value": "1581753599999"
+                },
+                {
+                  "key": "mode",
+                  "value": "day"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "获取工作量邮件配置（与叉车共用）",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://10.3.69.26:9090/report/emailSetting?type=DAY_REPORT",
+              "protocol": "http",
+              "host": ["10", "3", "69", "26"],
+              "port": "9090",
+              "path": ["report", "emailSetting"],
+              "query": [
+                {
+                  "key": "type",
+                  "value": "DAY_REPORT"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "修改工作量邮件配置（与叉车共用）",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"content\":\"人员工作量日报表邮件\",\"subject\":\"人员工作量日报表邮件\",\"recipients\":[38],\"sendTime\":\"09:33\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://10.3.69.26:9090/report/emailSetting/1",
+              "protocol": "http",
+              "host": ["10", "3", "69", "26"],
+              "port": "9090",
+              "path": ["report", "emailSetting", "1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "手动发送邮件（与叉车共用）",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://10.3.69.26:9090/report/emailSetting/selfSend?type=DAY_REPORT&startTime=1559318400000&endTime=1581753599999&keywords=",
+              "protocol": "http",
+              "host": ["10", "3", "69", "26"],
+              "port": "9090",
+              "path": ["report", "emailSetting", "selfSend"],
+              "query": [
+                {
+                  "key": "type",
+                  "value": "DAY_REPORT"
+                },
+                {
+                  "key": "startTime",
+                  "value": "1559318400000"
+                },
+                {
+                  "key": "endTime",
+                  "value": "1581753599999"
+                },
+                {
+                  "key": "keywords",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "叉车工作量报表",
+      "item": [
+        {
+          "name": "获取叉车工作量列表",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://10.3.69.26:9090/report/workloads/devices?startTime=1556640000000&endTime=1581753599999&mode=day&devType=1",
+              "protocol": "http",
+              "host": ["10", "3", "69", "26"],
+              "port": "9090",
+              "path": ["report", "workloads", "devices"],
+              "query": [
+                {
+                  "key": "startTime",
+                  "value": "1556640000000"
+                },
+                {
+                  "key": "endTime",
+                  "value": "1581753599999"
+                },
+                {
+                  "key": "mode",
+                  "value": "day"
+                },
+                {
+                  "key": "devType",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "货物破损信息报表",
+      "item": [
+        {
+          "name": "获取货物破损信息列表",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://10.3.69.26:9090/report/cargo/broken?startTime=1559318400000&endTime=1581753599999",
+              "protocol": "http",
+              "host": ["10", "3", "69", "26"],
+              "port": "9090",
+              "path": ["report", "cargo", "broken"],
+              "query": [
+                {
+                  "key": "startTime",
+                  "value": "1559318400000"
+                },
+                {
+                  "key": "endTime",
+                  "value": "1581753599999"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "货物状态信息",
+      "item": [
+        {
+          "name": "获取货物状态信息列表",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://10.3.69.26:9090/report/cargo/status?startTime=1559318400000&endTime=1581753599999&mode=day",
+              "protocol": "http",
+              "host": ["10", "3", "69", "26"],
+              "port": "9090",
+              "path": ["report", "cargo", "status"],
+              "query": [
+                {
+                  "key": "startTime",
+                  "value": "1559318400000"
+                },
+                {
+                  "key": "endTime",
+                  "value": "1581753599999"
+                },
+                {
+                  "key": "mode",
+                  "value": "day"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
