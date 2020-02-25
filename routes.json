@@ -44,5 +44,7 @@
 
   "/report/cargo/broken": "/broken",
 
-  "/report/cargo/status\\?startTime=:startTime\\&endTime=:endTime\\&mode=:mode": "/status"
+  "/report/cargo/status\\?startTime=:startTime\\&endTime=:endTime\\&mode=:mode": "/status",
+
+  "/report/emailSendConfig": "/emailSendConfig"
 }
