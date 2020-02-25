@@ -36,8 +36,6 @@
 
   "/report/recipients\\?pageNum=:pageNum\\&pageSize=:pageSize": "/recipients?_view=:pageNum&_limit=:pageSize",
 
-  "/report/emailSendConf": "/emailSendConf",
-
   "/report/workloads\\?mode=:mode": "/workloads?mode=:mode",
 
   "/report/cargo/emailSetting\\?type=:type": "/emailSetting?type=:type",
@@ -46,5 +44,7 @@
 
   "/report/cargo/status\\?startTime=:startTime\\&endTime=:endTime\\&mode=:mode": "/status",
 
-  "/report/emailSendConfig": "/emailSendConfig"
+  "/report/emailSendConfig": "/emailSendConfig",
+
+  "/report/emailSendConf": "/emailSendConf"
 }
