@@ -10,6 +10,8 @@ module.exports = (req, res, next) => {
       smtpSslEnable: true,
       smtpUserName: "dcgmail@126.com"
     });
+  } else if (req.method == "PUT" && req.path == "/emailSendConfig") {
+    res.status(200);
   } else {
     next();
   }

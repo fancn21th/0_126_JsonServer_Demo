@@ -44,7 +44,5 @@
 
   "/report/cargo/status\\?startTime=:startTime\\&endTime=:endTime\\&mode=:mode": "/status",
 
-  "/report/emailSendConfig": "/emailSendConfig",
-
-  "/report/emailSendConf": "/emailSendConf"
+  "/report/emailSendConfig": "/emailSendConfig"
 }
