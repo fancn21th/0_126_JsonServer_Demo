@@ -6,12 +6,15 @@
   "/rule\\?current=:pageindex\\&pageSize=:pagesize\\&sorter=:sort": "/rules?_view=:pageindex&_limit=:pagesize",
 
   "/sinoapi/getcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize\\&orderno=:orderno": "/cargoes?_page=:pageindex&_limit=:pagesize&InOrderNo=:orderno",
+
   "/sinoapi/getcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize": "/cargoes?_page=:pageindex&_limit=:pagesize",
 
   "/sinoapi/getoutcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize\\&orderno=:orderno": "/outcargoes?_page=:pageindex&_limit=:pagesize&OutOrderNo=:orderno",
+
   "/sinoapi/getoutcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize": "/outcargoes?_page=:pageindex&_limit=:pagesize",
 
   "/sinoapi/getoplist\\?pageindex=:pageindex\\&pagesize=:pagesize\\&orderno=:orderno": "/ops?_page=:pageindex&_limit=:pagesize&OrderNo=:orderno",
+
   "/sinoapi/getoplist\\?pageindex=:pageindex\\&pagesize=:pagesize": "/ops?_page=:pageindex&_limit=:pagesize",
 
   "/sinoapi/getuploadresult\\?opsn=:opsn": "/uploadresults?OpSN=:opsn",
