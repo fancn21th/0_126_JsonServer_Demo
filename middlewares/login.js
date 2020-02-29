@@ -50,22 +50,25 @@ const rbacMap = {
 
 module.exports = (req, res, next) => {
   if (req.method == "POST" && req.path == "/authenticate") {
-    console.log(req.body.username);
+    // lowercase username
     const userName = req.body.username;
+    console.log(userName);
     if (Object.keys(rbacMap).includes(userName)) {
       res.status(200).json(rbacMap[userName]);
     } else {
       res.status(400).json({ message: "wrong username" });
     }
   } else if (req.method == "POST" && req.path == "/login") {
-    // if (req.body.username === "a" && req.body.password === "a") {
-    //   res.status(200).json({});
-    // } else {
-    //   res.status(400).json({ message: "wrong password" });
-    // }
-    res
-      .status(200)
-      .json({ status: "ok", type: "account", currentAuthority: "admin" });
+    // uppercase username
+    if (req.body.userName === "admin") {
+      res
+        .status(200)
+        .json({ status: "ok", type: "account", currentAuthority: "admin" });
+    } else {
+      res
+        .status(200)
+        .json({ status: "ok", type: "account", currentAuthority: "guest" });
+    }
   } else {
     next();
   }
