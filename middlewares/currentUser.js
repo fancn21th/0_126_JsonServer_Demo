@@ -8,9 +8,7 @@ module.exports = (req, res, next) => {
       id: 17,
       phone: "123456788",
       realname: "范大王",
-      username: "alex",
-      userid: "00000001",
-      name: "范大王"
+      username: "alex"
     });
     // res.status(200).json({
     //   name: "Serati Ma",
