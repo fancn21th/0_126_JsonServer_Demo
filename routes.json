@@ -5,7 +5,7 @@
 
   "/auth/authenticate": "/authenticate",
 
-  "/userManager/user/:id": "/user/:id",
+  "/usermanager/user/:id": "/user",
 
   "/rule\\?current=:pageindex\\&pageSize=:pagesize\\&sorter=:sort": "/rules?_view=:pageindex&_limit=:pagesize",
 
