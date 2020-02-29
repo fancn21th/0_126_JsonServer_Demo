@@ -1,6 +1,16 @@
 // login.js
 module.exports = (req, res, next) => {
-  if (req.method == "GET" && req.path == "/currentUser") {
+  if (req.method == "GET" && req.path == "/user") {
+    res.status(200).json({
+      avatar:
+        "https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png",
+      email: "4556543@qq.com",
+      id: 17,
+      phone: "123456788",
+      realname: "范大王",
+      username: "alex"
+    });
+  } else if (req.method == "GET" && req.path == "/currentUser") {
     res.status(200).json({
       name: "Serati Ma",
       avatar:

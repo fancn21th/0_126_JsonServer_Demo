@@ -3,6 +3,10 @@
 
   "/currentUser": "/currentUser",
 
+  "/auth/authenticate": "/authenticate",
+
+  "/userManager/user/:id": "/user/:id",
+
   "/rule\\?current=:pageindex\\&pageSize=:pagesize\\&sorter=:sort": "/rules?_view=:pageindex&_limit=:pagesize",
 
   "/sinoapi/getcargolist\\?pageindex=:pageindex\\&pagesize=:pagesize\\&orderno=:orderno": "/cargoes?_page=:pageindex&_limit=:pagesize&InOrderNo=:orderno",
